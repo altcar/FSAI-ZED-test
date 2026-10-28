@@ -1,0 +1,7 @@
+Sim runtime: (5, 5, 1) ABI structure bytes: 256
+Traceback (most recent call last):
+  File "L:\save\userdata\Downloads\FSAI_3070_Windows_Kit\analysis\run_sdk_with_root.py", line 24, in <module>
+    run_sdk.main()
+  File "L:\save\userdata\Downloads\FSAI_3070_Windows_Kit\scripts\run_sdk.py", line 176, in main
+    raise RuntimeError('Streamer exited. Read outputs/sdk_three_way/streamer.log')
+RuntimeError: Streamer exited. Read outputs/sdk_three_way/streamer.log

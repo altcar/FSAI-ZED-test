@@ -1,0 +1,16 @@
+Sim runtime: (5, 5, 1) ABI structure bytes: 100
+[2026-10-28 15:47:57 UTC][ZED][INFO] Logging level INFO
+[ZED][Streaming] No SHM-boost topic found for port 30000. Using UDP backend input.
+[Streaming] Warning: Failed to retrieve camera settings from sender
+[Streaming] Error: Stream Opening returned TIMEOUT (5000 ms)
+[Streaming] Incorrect metadata size. Expecting: 2904 got -1. Skipping.
+[2026-10-28 15:48:04 UTC][ZED][ERROR] FAILURE in enum sl::ERROR_CODE __cdecl sl::Camera::open(struct sl::InitParameters)
+Traceback (most recent call last):
+  File "L:\save\userdata\Downloads\FSAI_3070_Windows_Kit\analysis\run_sdk_with_root.py", line 24, in <module>
+    run_sdk.main()
+  File "L:\save\userdata\Downloads\FSAI_3070_Windows_Kit\scripts\run_sdk.py", line 180, in main
+    capture(args, prepared, meta)
+  File "L:\save\userdata\Downloads\FSAI_3070_Windows_Kit\scripts\run_sdk.py", line 58, in capture
+    if int(status) > 0:
+       ^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'ERROR_CODE'

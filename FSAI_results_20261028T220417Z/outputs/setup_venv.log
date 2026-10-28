@@ -1,0 +1,24 @@
+Downloading cpython-3.11.17-windows-x86_64-none (download) (23.9MiB)
+ Downloaded cpython-3.11.17-windows-x86_64-none (download)
+Using CPython 3.11.17
+Creating virtual environment at: .venv
+Activate with: .venv\Scripts\activate
+Resolved 13 packages in 2.50s
+Downloading setuptools (1.2MiB)
+Downloading torch (2.6GiB)
+Downloading networkx (2.0MiB)
+Downloading sympy (6.0MiB)
+Downloading pillow (6.9MiB)
+Downloading numpy (12.0MiB)
+Downloading torchvision (8.9MiB)
+ Downloaded torchvision
+ Downloaded pillow
+ Downloaded setuptools
+ Downloaded networkx
+ Downloaded numpy
+ Downloaded sympy
+ Downloaded torch
+Prepared 13 packages in 4m 01s
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.

@@ -1,0 +1,59 @@
+Using CPython 3.11.17
+Creating virtual environment at: C:\FSAI_3070_venv
+Activate with: C:\FSAI_3070_venv\Scripts\activate
+Using Python 3.11.17 environment at: C:\FSAI_3070_venv
+Resolved 13 packages in 653ms
+Downloading pillow (6.9MiB)
+ Downloaded pillow
+Prepared 3 packages in 593ms
+Installed 13 packages in 20.58s
+ + filelock==4.2.4
+ + fsspec==2026.9.0
+ + jinja2==3.1.6
+ + markupsafe==3.0.3
+ + mpmath==1.3.0
+ + networkx==3.6.1
+ + numpy==2.4.6
+ + pillow==13.0.0
+ + setuptools==78.1.0
+ + sympy==1.14.0
+ + torch==2.11.0+cu128
+ + torchvision==0.26.0+cu128
+ + typing-extensions==4.16.0
+Using Python 3.11.17 environment at: C:\FSAI_3070_venv
+Resolved 40 packages in 271ms
+Downloading fonttools (1.6MiB)
+ Downloaded fonttools
+Prepared 3 packages in 175ms
+Uninstalled 1 package in 194ms
+Installed 29 packages in 2.95s
+ + anyio==4.15.1
+ + certifi==2026.10.23
+ + charset-normalizer==3.5.2
+ + contourpy==1.3.3
+ + cycler==0.12.1
+ + fonttools==4.68.0
+ + h11==0.16.0
+ + httpcore==1.0.9
+ + httpx==0.28.1
+ + idna==3.20
+ + kiwisolver==1.5.1
+ + matplotlib==3.11.2
+ - numpy==2.4.6
+ + numpy==2.2.6
+ + nvidia-ml-py==13.615.71
+ + opencv-python==4.12.0.88
+ + packaging==26.3
+ + polars==1.44.2
+ + polars-runtime-32==1.44.2
+ + psutil==7.2.2
+ + pyparsing==3.3.3
+ + python-dateutil==3.0.0
+ + pyyaml==6.0.3
+ + requests==2.34.2
+ + scipy==1.17.1
+ + six==1.17.0
+ + tzdata==2026.6
+ + ultralytics-platform==0.1.101
+ + ultralytics-thop==2.2.3
+ + urllib3==2.8.0

@@ -1,0 +1,81 @@
+Setting up Python 3.11 environment...
+Using CPython 3.11.17
+Creating virtual environment at: C:\FSAI_3070_venv
+Activate with: C:\FSAI_3070_venv\Scripts\activate
+Junction created for .venv <<===>> C:\FSAI_3070_venv
+Looking in links: c:\Users\V9\AppData\Local\Temp\tmpn_k6yzi8
+Processing C:\Users\V9\AppData\Local\Temp\tmpn_k6yzi8\setuptools-79.0.1-py3-none-any.whl
+Processing C:\Users\V9\AppData\Local\Temp\tmpn_k6yzi8\pip-26.2.2-py3-none-any.whl
+Installing collected packages: setuptools, pip
+
+Successfully installed pip-26.2.2 setuptools-79.0.1
+Resolved 13 packages in 398ms
+Installed 12 packages in 2.59s
+ + filelock==4.2.4
+ + fsspec==2026.9.0
+ + jinja2==3.1.6
+ + markupsafe==3.0.3
+ + mpmath==1.3.0
+ + networkx==3.6.1
+ + numpy==2.4.6
+ + pillow==13.0.0
+ + sympy==1.14.0
+ + torch==2.11.0+cu128
+ + torchvision==0.26.0+cu128
+ + typing-extensions==4.16.0
+Resolved 40 packages in 153ms
+Uninstalled 1 package in 126ms
+Installed 29 packages in 406ms
+ + anyio==4.15.1
+ + certifi==2026.10.23
+ + charset-normalizer==3.5.2
+ + contourpy==1.3.3
+ + cycler==0.12.1
+ + fonttools==4.68.0
+ + h11==0.16.0
+ + httpcore==1.0.9
+ + httpx==0.28.1
+ + idna==3.20
+ + kiwisolver==1.5.1
+ + matplotlib==3.11.2
+ - numpy==2.4.6
+ + numpy==2.2.6
+ + nvidia-ml-py==13.615.71
+ + opencv-python==4.12.0.88
+ + packaging==26.3
+ + polars==1.44.2
+ + polars-runtime-32==1.44.2
+ + psutil==7.2.2
+ + pyparsing==3.3.3
+ + python-dateutil==3.0.0
+ + pyyaml==6.0.3
+ + requests==2.34.2
+ + scipy==1.17.1
+ + six==1.17.0
+ + tzdata==2026.6
+ + ultralytics-platform==0.1.101
+ + ultralytics-thop==2.2.3
+ + urllib3==2.8.0
+{
+  "python": "3.11.17 (main, Oct 21 2026, 17:46:24) [MSC v.1944 64 bit (AMD64)]",
+  "os": "Windows-10-10.0.26300-SP0",
+  "torch": "2.11.0+cu128",
+  "torchvision": "0.26.0+cu128",
+  "numpy": "2.2.6",
+  "opencv": "4.12.0",
+  "ultralytics": "8.4.189",
+  "ultralytics_source": "L:\\save\\userdata\\Downloads\\FSAI_3070_Windows_Kit\\vendor\\ultralytics\\__init__.py",
+  "torch_cuda_build": "12.8",
+  "cuda_available": true,
+  "gpu": [
+    {
+      "name": "NVIDIA GeForce RTX 3070 Laptop GPU",
+      "vram_gib": 7.99951171875
+    }
+  ],
+  "cuda_operation_ok": true,
+  "nvidia_smi": "Wed Oct 28 21:51:52 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 621.01                 KMD Version: 621.01        CUDA UMD Version: 13.5     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 3070 ...  WDDM  |   00000000:01:00.0 Off |                  N/A |\n| N/A   55C    P0             29W /   82W |     147MiB /   8192MiB |      9%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A           21008      C   ...indows-x86_64-none\\python.exe      N/A      |\n+-----------------------------------------------------------------------------------------+\n",
+  "zed_sdk": "not installed: No module named 'pyzed'"
+}
+Setup complete. Run 01_verify_and_replay.cmd, then 02_run_depthnet.cmd.
+Press any key to continue . . . 

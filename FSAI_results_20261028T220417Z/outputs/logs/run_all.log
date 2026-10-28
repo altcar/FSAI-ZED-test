@@ -1,0 +1,323 @@
+== environment ==
+{
+  "python": "3.11.17 (main, Oct 21 2026, 17:46:24) [MSC v.1944 64 bit (AMD64)]",
+  "os": "Windows-10-10.0.26300-SP0",
+  "torch": "2.11.0+cu128",
+  "torchvision": "0.26.0+cu128",
+  "numpy": "2.2.6",
+  "opencv": "4.12.0",
+  "ultralytics": "8.4.189",
+  "ultralytics_source": "L:\\save\\userdata\\Downloads\\FSAI_3070_Windows_Kit\\vendor\\ultralytics\\__init__.py",
+  "torch_cuda_build": "12.8",
+  "cuda_available": true,
+  "gpu": [
+    {
+      "name": "NVIDIA GeForce RTX 3070 Laptop GPU",
+      "vram_gib": 7.99951171875
+    }
+  ],
+  "cuda_operation_ok": true,
+  "nvidia_smi": "Tue Oct 27 08:00:21 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 555.97                 Driver Version: 555.97         CUDA Version: 12.5     |\n|-----------------------------------------+------------------------+----------------------+\n| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 3070 ...  WDDM  |   00000000:01:00.0 Off |                  N/A |\n| N/A   74C    P0             34W /   80W |     518MiB /   8192MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n                                                                                         \n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A     10720    C+G   ...SOverlayRenderer-Win64-Shipping.exe      N/A      |\n|    0   N/A  N/A     27132    C+G   ...inaries\\Win64\\EpicGamesLauncher.exe      N/A      |\n|    0   N/A  N/A     30512      C   ...1.17-windows-x86_64-none\\python.exe      N/A      |\n|    0   N/A  N/A     34028    C+G   ...ogram Files\\WordCraft\\wordcraft.exe      N/A      |\n+-----------------------------------------------------------------------------------------+\n",
+  "zed_sdk": "not installed: No module named 'pyzed'"
+}
+== manifest ==
+OK: 461 original kit files verified. Outputs and .venv are not checked.
+== unit_tests ==
+test_c_abi_layout (test_geometry_metrics.ComparisonTests.test_c_abi_layout) ... ok
+test_common_support_and_missing_depth (test_geometry_metrics.ComparisonTests.test_common_support_and_missing_depth) ... ok
+test_mismatched_coordinates_rejected (test_geometry_metrics.ComparisonTests.test_mismatched_coordinates_rejected) ... ok
+test_rotated_plane_optical_z (test_geometry_metrics.ComparisonTests.test_rotated_plane_optical_z) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.028s
+
+OK
+== replay ==
+{
+  "depth_definition": "optical_z_metres",
+  "gt_min_exclusive_m": 0,
+  "gt_max_inclusive_m": 20,
+  "target_pixels": 419524,
+  "posthoc_scale_fit": false,
+  "pairwise": {
+    "DepthNet": {
+      "pixels": 419524,
+      "mae_m": 2.6131930394857865,
+      "rmse_m": 2.747711849601361,
+      "bias_m": 2.190781246582518,
+      "abs_rel": 1.2265185937663288,
+      "coverage_of_gt": 1.0
+    }
+  },
+  "common_pixels": 419524,
+  "common_pixel_metrics": {
+    "DepthNet": {
+      "pixels": 419524,
+      "mae_m": 2.6131930394857865,
+      "rmse_m": 2.747711849601361,
+      "bias_m": 2.190781246582518,
+      "abs_rel": 1.2265185937663288
+    }
+  },
+  "three_way_complete": false,
+  "inference": {
+    "replayed_prediction": "reference_results\\single_depth_check.prediction.npy"
+  },
+  "image_sha256": "6f7aa9b40046f1212cfedad9369f0ccd189570ab7b44ff6dedde166c10e3fadf",
+  "gt_sha256": "a1730db26a2c326285fabff7b14704a25ca80a6b13f0009a91d5a693da0ffe25",
+  "all_cone_pixels_common": {
+    "DepthNet": {
+      "pixels": 5895,
+      "mae_m": 1.4218563510969193,
+      "rmse_m": 1.7792588279903678,
+      "bias_m": 0.5516444733630206,
+      "abs_rel": 0.267735895626532
+    }
+  }
+}
+Results: L:\save\userdata\Downloads\FSAI_3070_Windows_Kit\outputs\replay_windows
+== mono_gpu ==
+
+WARNING NMS time limit 2.050s exceeded
+image 1/1 L:\save\userdata\Downloads\FSAI_3070_Windows_Kit\data\mono_demo\image_pinhole.png: 768x768 depth 3.61-22.46m, 1123.0ms
+Speed: 484.9ms preprocess, 1123.0ms inference, 35.3ms postprocess per image at shape (1, 3, 768, 768)
+{
+  "depth_definition": "optical_z_metres",
+  "gt_min_exclusive_m": 0,
+  "gt_max_inclusive_m": 20,
+  "target_pixels": 419524,
+  "posthoc_scale_fit": false,
+  "pairwise": {
+    "DepthNet": {
+      "pixels": 419524,
+      "mae_m": 2.6104189209582698,
+      "rmse_m": 2.7450329804881157,
+      "bias_m": 2.1878451467596958,
+      "abs_rel": 1.2250294862518145,
+      "coverage_of_gt": 1.0
+    }
+  },
+  "common_pixels": 419524,
+  "common_pixel_metrics": {
+    "DepthNet": {
+      "pixels": 419524,
+      "mae_m": 2.6104189209582698,
+      "rmse_m": 2.7450329804881157,
+      "bias_m": 2.1878451467596958,
+      "abs_rel": 1.2250294862518145
+    }
+  },
+  "three_way_complete": false,
+  "inference": {
+    "device": "0",
+    "torch": "2.11.0+cu128",
+    "ultralytics": "8.4.189",
+    "imgsz": 768,
+    "speed_ms": {
+      "preprocess": 484.8724999901606,
+      "inference": 1123.0409999989206,
+      "postprocess": 35.30359998694621
+    }
+  },
+  "image_sha256": "6f7aa9b40046f1212cfedad9369f0ccd189570ab7b44ff6dedde166c10e3fadf",
+  "gt_sha256": "a1730db26a2c326285fabff7b14704a25ca80a6b13f0009a91d5a693da0ffe25",
+  "all_cone_pixels_common": {
+    "DepthNet": {
+      "pixels": 5895,
+      "mae_m": 1.421656794503546,
+      "rmse_m": 1.779050220320711,
+      "bias_m": 0.5510206973583037,
+      "abs_rel": 0.26765478365721856
+    }
+  }
+}
+Results: L:\save\userdata\Downloads\FSAI_3070_Windows_Kit\outputs\mono_gpu
+== stereo_validation ==
+
+WARNING NMS time limit 2.050s exceeded
+image 1/1 L:\save\userdata\Downloads\FSAI_3070_Windows_Kit\outputs\stereo_validation\prepared\left.png: 768x768 depth 2.71-24.42m, 1138.8ms
+Speed: 124.1ms preprocess, 1138.8ms inference, 146.1ms postprocess per image at shape (1, 3, 768, 768)
+{
+  "main": {
+    "gt_min_exclusive_m": 0.0,
+    "gt_max_inclusive_m": 20.0,
+    "target_pixels": 270876,
+    "common_pixels": 197731,
+    "pairwise": {
+      "DepthNet": {
+        "pixels": 270876,
+        "mae_m": 2.435846266464653,
+        "rmse_m": 2.663702577171364,
+        "bias_m": 1.8090802158199168,
+        "median_abs_error_m": 2.377884268760681,
+        "p90_abs_error_m": 3.0250633358955383,
+        "p95_abs_error_m": 3.5614869594573975,
+        "max_abs_error_m": 12.400808811187744,
+        "abs_rel": 1.082138246544147,
+        "pearson_r": 0.8909707790490784,
+        "r2": 0.3668555022175919,
+        "delta_1_25": 0.10920494986635952,
+        "delta_1_25_2": 0.2456954473633692,
+        "delta_1_25_3": 0.46239238618408424,
+        "coverage_of_gt": 1.0
+      },
+      "SGBM": {
+        "pixels": 197731,
+        "mae_m": 0.791104064581406,
+        "rmse_m": 4.300646826294339,
+        "bias_m": 0.4532966753404002,
+        "median_abs_error_m": 0.013332486152648926,
+        "p90_abs_error_m": 0.5487747192382812,
+        "p95_abs_error_m": 3.3564839363098145,
+        "max_abs_error_m": 72.32385277748108,
+        "abs_rel": 0.0966100235369448,
+        "pearson_r": 0.6772018720521964,
+        "r2": -0.9678531076588799,
+        "delta_1_25": 0.9340872195052875,
+        "delta_1_25_2": 0.9601933940555604,
+        "delta_1_25_3": 0.9770749149096499,
+        "coverage_of_gt": 0.7299686941626427
+      }
+    },
+    "common_pixel_metrics": {
+      "DepthNet": {
+        "pixels": 197731,
+        "mae_m": 2.5303033378589173,
+        "rmse_m": 2.7177701532911236,
+        "bias_m": 1.9695183287793978,
+        "median_abs_error_m": 2.4837589263916016,
+        "p90_abs_error_m": 2.997585415840149,
+        "p95_abs_error_m": 3.108008623123169,
+        "max_abs_error_m": 12.400808811187744,
+        "abs_rel": 1.2140326645327644,
+        "pearson_r": 0.9163331835273613,
+        "r2": 0.2141302570880268,
+        "delta_1_25": 0.06829480455770719,
+        "delta_1_25_2": 0.171409642392948,
+        "delta_1_25_3": 0.3839711527276957
+      },
+      "SGBM": {
+        "pixels": 197731,
+        "mae_m": 0.791104064581406,
+        "rmse_m": 4.300646826294339,
+        "bias_m": 0.4532966753404002,
+        "median_abs_error_m": 0.013332486152648926,
+        "p90_abs_error_m": 0.5487747192382812,
+        "p95_abs_error_m": 3.3564839363098145,
+        "max_abs_error_m": 72.32385277748108,
+        "abs_rel": 0.0966100235369448,
+        "pearson_r": 0.6772018720521964,
+        "r2": -0.9678531076588799,
+        "delta_1_25": 0.9340872195052875,
+        "delta_1_25_2": 0.9601933940555604,
+        "delta_1_25_3": 0.9770749149096499
+      }
+    }
+  },
+  "extended": {
+    "gt_min_exclusive_m": 0.5,
+    "gt_max_inclusive_m": 80.0,
+    "target_pixels": 279454,
+    "common_pixels": 203616,
+    "pairwise": {
+      "DepthNet": {
+        "pixels": 279454,
+        "mae_m": 2.9081862243396617,
+        "rmse_m": 4.367384991111139,
+        "bias_m": 1.206439817210344,
+        "median_abs_error_m": 2.4008774161338806,
+        "p90_abs_error_m": 3.143084716796875,
+        "p95_abs_error_m": 5.737565040588336,
+        "max_abs_error_m": 56.97384071350098,
+        "abs_rel": 1.0663830602462145,
+        "pearson_r": 0.8534694589446618,
+        "r2": 0.45601788653618736,
+        "delta_1_25": 0.10596019380649409,
+        "delta_1_25_2": 0.24045817916365483,
+        "delta_1_25_3": 0.4563899604228245,
+        "coverage_of_gt": 1.0
+      },
+      "SGBM": {
+        "pixels": 203616,
+        "mae_m": 1.1358186471232514,
+        "rmse_m": 5.049893540615431,
+        "bias_m": 0.18135252483534528,
+        "median_abs_error_m": 0.014002501964569092,
+        "p90_abs_error_m": 1.2853851318359375,
+        "p95_abs_error_m": 6.690800189971924,
+        "max_abs_error_m": 72.32385277748108,
+        "abs_rel": 0.10510876643532031,
+        "pearson_r": 0.6880773810000902,
+        "r2": 0.28156649956555335,
+        "delta_1_25": 0.9141766855256954,
+        "delta_1_25_2": 0.9465906412069779,
+        "delta_1_25_3": 0.9697666195190948,
+        "coverage_of_gt": 0.7286208105806322
+      }
+    },
+    "common_pixel_metrics": {
+      "DepthNet": {
+        "pixels": 203616,
+        "mae_m": 3.048150334106186,
+        "rmse_m": 4.651061172098603,
+        "bias_m": 1.3216154896309498,
+        "median_abs_error_m": 2.5044281482696533,
+        "p90_abs_error_m": 3.0337864756584167,
+        "p95_abs_error_m": 5.207691192626953,
+        "max_abs_error_m": 56.19740009307861,
+        "abs_rel": 1.1971208177676436,
+        "pearson_r": 0.8795546650952901,
+        "r2": 0.39056662676179255,
+        "delta_1_25": 0.06632582901147258,
+        "delta_1_25_2": 0.1666617554612604,
+        "delta_1_25_3": 0.3745334354864058
+      },
+      "SGBM": {
+        "pixels": 203616,
+        "mae_m": 1.1358186471232514,
+        "rmse_m": 5.049893540615431,
+        "bias_m": 0.18135252483534528,
+        "median_abs_error_m": 0.014002501964569092,
+        "p90_abs_error_m": 1.2853851318359375,
+        "p95_abs_error_m": 6.690800189971924,
+        "max_abs_error_m": 72.32385277748108,
+        "abs_rel": 0.10510876643532031,
+        "pearson_r": 0.6880773810000902,
+        "r2": 0.28156649956555335,
+        "delta_1_25": 0.9141766855256954,
+        "delta_1_25_2": 0.9465906412069779,
+        "delta_1_25_3": 0.9697666195190948
+      }
+    }
+  },
+  "disparity": {
+    "evaluated_pixels": 197731,
+    "median_abs_disparity_px": 0.2646980285644531,
+    "p90_abs_disparity_px": 1.0927562713623047,
+    "within_1px_pct": 0.8945688839888536,
+    "within_2px_pct": 0.9301374089040161
+  },
+  "epipolar": {
+    "sift_keypoints_left": 409,
+    "sift_keypoints_right": 360,
+    "ratio_test_matches": 225,
+    "median_dy_px": 0.000335693359375,
+    "median_abs_dy_px": 0.1171722412109375,
+    "p95_abs_dy_px": 1.210217833518982,
+    "share_abs_dy_le_1px": 0.9288888888888889
+  },
+  "cpu_reference_comparison": {
+    "reference": "validation\\stereo_net_only\\depthnet_z_m.npy",
+    "comparable_pixels": 576000,
+    "max_abs_diff_m": 0.10892581939697266,
+    "mean_abs_diff_m": 0.028887631371617317,
+    "bitwise_equal": false
+  }
+}
+Wrote L:\save\userdata\Downloads\FSAI_3070_Windows_Kit\outputs\stereo_validation and figures in L:\save\userdata\Downloads\FSAI_3070_Windows_Kit\outputs\stereo_validation\figures
+== report ==
+Wrote L:\save\userdata\Downloads\FSAI_3070_Windows_Kit\STEREO_DEPTH_VALIDATION.md
+
+Done. Report: STEREO_DEPTH_VALIDATION.md
+Figures: outputs\stereo_validation\figures
+Raw results: outputs\stereo_validation\results.json

@@ -1,0 +1,21 @@
+{
+  "sdk_root": "L:\\save\\userdata\\Downloads\\ZED_SDK_extract\\app",
+  "exists": true,
+  "steps": [
+    {
+      "step": "sdk installed",
+      "ok": true,
+      "detail": "L:\\save\\userdata\\Downloads\\ZED_SDK_extract\\app"
+    },
+    {
+      "step": "get_python_api.py",
+      "ok": true,
+      "detail": "L:\\save\\userdata\\Downloads\\ZED_SDK_extract\\app\\get_python_api.py"
+    },
+    {
+      "step": "pyzed import",
+      "ok": true,
+      "detail": "5.5.1"
+    }
+  ]
+}

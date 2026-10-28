@@ -1,0 +1,24 @@
+--- h264_nvenc ---
+[h264_nvenc @ 000001f728326fc0] Driver does not support the required nvenc API version. Required: 13.1 Found: 12.2
+[h264_nvenc @ 000001f728326fc0] The minimum required Nvidia driver for nvenc is 610.00 or newer
+[vost#0:0/h264_nvenc @ 000001f728326600] [enc:h264_nvenc @ 000001f727dd4cc0] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.
+[vf#0:0 @ 000001f728341e80] Error sending frames to consumers: Function not implemented
+[vf#0:0 @ 000001f728341e80] Task finished with error code: -40 (Function not implemented)
+[vf#0:0 @ 000001f728341e80] Terminating thread with return code -40 (Function not implemented)
+[vost#0:0/h264_nvenc @ 000001f728326600] [enc:h264_nvenc @ 000001f727dd4cc0] Could not open encoder before EOF
+[vost#0:0/h264_nvenc @ 000001f728326600] Task finished with error code: -22 (Invalid argument)
+[vost#0:0/h264_nvenc @ 000001f728326600] Terminating thread with return code -22 (Invalid argument)
+[out#0/null @ 000001f727df3280] Nothing was written into output file, because at least one of its streams received no packets.
+h264_exit=-40
+--- hevc_nvenc ---
+[hevc_nvenc @ 000002c4300e6fc0] Driver does not support the required nvenc API version. Required: 13.1 Found: 12.2
+[hevc_nvenc @ 000002c4300e6fc0] The minimum required Nvidia driver for nvenc is 610.00 or newer
+[vost#0:0/hevc_nvenc @ 000002c4300e6600] [enc:hevc_nvenc @ 000002c42e5e5d00] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.
+[vf#0:0 @ 000002c430101e80] Error sending frames to consumers: Function not implemented
+[vf#0:0 @ 000002c430101e80] Task finished with error code: -40 (Function not implemented)
+[vf#0:0 @ 000002c430101e80] Terminating thread with return code -40 (Function not implemented)
+[vost#0:0/hevc_nvenc @ 000002c4300e6600] [enc:hevc_nvenc @ 000002c42e5e5d00] Could not open encoder before EOF
+[vost#0:0/hevc_nvenc @ 000002c4300e6600] Task finished with error code: -22 (Invalid argument)
+[vost#0:0/hevc_nvenc @ 000002c4300e6600] Terminating thread with return code -22 (Invalid argument)
+[out#0/null @ 000002c42e604cc0] Nothing was written into output file, because at least one of its streams received no packets.
+hevc_exit=-40

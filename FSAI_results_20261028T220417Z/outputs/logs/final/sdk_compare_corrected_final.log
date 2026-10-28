@@ -1,0 +1,60 @@
+
+image 1/1 L:\save\userdata\Downloads\FSAI_3070_Windows_Kit\outputs\sdk_three_way\sdk_left_corrected.png: 768x768 depth 2.77-24.58m, 16.1ms
+Speed: 29.9ms preprocess, 16.1ms inference, 0.3ms postprocess per image at shape (1, 3, 768, 768)
+{
+  "depth_definition": "optical_z_metres",
+  "gt_min_exclusive_m": 0,
+  "gt_max_inclusive_m": 20,
+  "target_pixels": 270876,
+  "posthoc_scale_fit": false,
+  "pairwise": {
+    "DepthNet": {
+      "pixels": 270876,
+      "mae_m": 2.311851284807738,
+      "rmse_m": 2.5476189567102723,
+      "bias_m": 1.6880631350300666,
+      "abs_rel": 1.0156896005677931,
+      "coverage_of_gt": 1.0
+    },
+    "ZED_SDK": {
+      "pixels": 250089,
+      "mae_m": 3.1165901624879315,
+      "rmse_m": 7.930187554678899,
+      "bias_m": 3.026335734533476,
+      "abs_rel": 1.2409231544734494,
+      "coverage_of_gt": 0.9232600894874408
+    }
+  },
+  "common_pixels": 250089,
+  "common_pixel_metrics": {
+    "DepthNet": {
+      "pixels": 250089,
+      "mae_m": 2.3159439107933193,
+      "rmse_m": 2.5279024003922457,
+      "bias_m": 1.8016638615181437,
+      "abs_rel": 1.0493676335842566
+    },
+    "ZED_SDK": {
+      "pixels": 250089,
+      "mae_m": 3.1165901624879315,
+      "rmse_m": 7.930187554678899,
+      "bias_m": 3.026335734533476,
+      "abs_rel": 1.2409231544734494
+    }
+  },
+  "three_way_complete": true,
+  "inference": {
+    "device": "0",
+    "torch": "2.11.0+cu128",
+    "ultralytics": "8.4.189",
+    "imgsz": 768,
+    "speed_ms": {
+      "preprocess": 29.903099999501137,
+      "inference": 16.06560000072932,
+      "postprocess": 0.2630000017234124
+    }
+  },
+  "image_sha256": "e8f313d7944e774a9174c22b2d73a6ea610067425731d0675f436a0b5bf04ced",
+  "gt_sha256": "b062f0c938bff6e3b384468b77da1dd8542ef3efaa5f6e05c196b79700a39a1a"
+}
+Results: L:\save\userdata\Downloads\FSAI_3070_Windows_Kit\outputs\sdk_three_way\comparison_corrected

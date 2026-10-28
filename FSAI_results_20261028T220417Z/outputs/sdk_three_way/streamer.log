@@ -1,0 +1,22 @@
+Sim runtime: (5, 5, 1) ABI structure bytes: 256
+[ZED SIM STREAMER]: *** ZED sim streamer created: 
+* Serial number: 110307008
+* Image width: 960
+* Image height: 600
+* IMU to Camera translation: 0, 0, 0
+* IMU to Camera quaternion: 0, 0, 0, 1
+* Port: 30000
+* FPS: 15
+* Streaming mode: 1
+* Codec: H264
+* Bitrate: 3000
+* Data bitrate: 3000
+* GOP size: 30
+* Camera model: 11
+* Transport layer mode: 2
+
+[2026-10-28 22:01:31 UTC][ZED][INFO] Using DEFAULT HW preset
+[2026-10-28 22:01:31 UTC][ZED][INFO] Using DEFAULT HW preset
+[ZED SIM STREAMER]: Failed to stream data: FRAME_DROPPED
+[ZED SIM STREAMER]: Failed to stream data: ENCODING_FAILED
+[ZED SIM STREAMER]: Streamer disposed

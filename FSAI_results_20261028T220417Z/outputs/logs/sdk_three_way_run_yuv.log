@@ -1,0 +1,12 @@
+Sim runtime: (5, 5, 1) ABI structure bytes: 100
+[2026-10-28 15:54:45 UTC][ZED][INFO] Logging level INFO
+[ZED][Streaming] No SHM-boost topic found for port 30000. Using UDP backend input.
+[Streaming] Warning : receiving port 30000 is not available (already used)... switching to port 30002. Retrying...
+[Streaming] Backward compatibility required.
+[2026-10-28 15:54:46 UTC][ZED][INFO] [Init]  Serial Number: S/N 110307008
+[2026-10-28 15:54:46 UTC][ZED][WARNING] Simulated ZED camera used ZED XOne GS
+[2026-10-28 15:54:46 UTC][ZED][WARNING] Self Calibration Disabled.
+[2026-10-28 15:54:46 UTC][ZED][INFO] [Init]  Depth mode selected: NEURAL. Ensure this mode matches your application's performance and accuracy requirements. See https://www.stereolabs.com/docs/depth-sensing/depth-modes for help.
+[2026-10-28 15:54:46 UTC][ZED][ERROR] [Object Detection]  TensorRT library not found. Ensure that TensorRT is properly installed.
+[2026-10-28 15:54:46 UTC][ZED][ERROR] [ZED] [Depth]  NEURAL TRT NOT FOUND
+[2026-10-28 15:54:46 UTC][ZED][ERROR] CORRUPTED SDK INSTALLATION in enum sl::ERROR_CODE __cdecl sl::Camera::open(struct sl::InitParameters)

@@ -1,0 +1,19 @@
+{
+  "settings_version": "0.0.8",
+  "datasets_dir": "L:\\save\\userdata\\Downloads\\FSAI_3070_Windows_Kit\\datasets",
+  "weights_dir": "weights",
+  "runs_dir": "runs",
+  "uuid": "f5d9184681b19e293f57799f5e7c3dea499897078f306f8c8a0f0ac9cbb4e211",
+  "sync": true,
+  "api_key": "",
+  "openai_api_key": "",
+  "clearml": true,
+  "comet": true,
+  "dvc": true,
+  "mlflow": true,
+  "raytune": true,
+  "tensorboard": false,
+  "wandb": false,
+  "vscode_msg": true,
+  "openvino_msg": true
+}

@@ -1,0 +1,65 @@
+Requirement already satisfied: numpy in .\.venv\Lib\site-packages (2.2.6)
+Processing .\pyzed-5.5-cp311-cp311-win_amd64.whl
+Collecting cython>=3.0.0 (from pyzed==5.5)
+  Downloading cython-3.3.0-cp311-cp311-win_amd64.whl.metadata (28 kB)
+Collecting numpy<3.0,>=2.0 (from pyzed==5.5)
+  Downloading numpy-2.4.6-cp311-cp311-win_amd64.whl.metadata (6.6 kB)
+Downloading numpy-2.4.6-cp311-cp311-win_amd64.whl (12.6 MB)
+   ---------------------------------------- 12.6/12.6 MB 9.3 MB/s  0:00:01
+Downloading cython-3.3.0-cp311-cp311-win_amd64.whl (2.9 MB)
+   ---------------------------------------- 2.9/2.9 MB 20.8 MB/s  0:00:00
+Installing collected packages: numpy, cython, pyzed
+  Attempting uninstall: numpy
+    Found existing installation: numpy 2.2.6
+    Uninstalling numpy-2.2.6:
+      Successfully uninstalled numpy-2.2.6
+  Attempting uninstall: pyzed
+    Found existing installation: pyzed 5.5
+    Uninstalling pyzed-5.5:
+      Successfully uninstalled pyzed-5.5
+
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+opencv-python 4.12.0.88 requires numpy<2.3.0,>=2; python_version >= "3.9", but you have numpy 2.4.6 which is incompatible.
+Successfully installed cython-3.3.0 numpy-2.4.6 pyzed-5.5
+Processing .\PyOpenGL-3.1.6-cp311-cp311-win_amd64.whl
+Installing collected packages: pyopengl
+Successfully installed pyopengl-3.1.6
+Processing .\PyOpenGL_accelerate-3.1.6-cp311-cp311-win_amd64.whl
+Installing collected packages: pyopengl-accelerate
+Successfully installed pyopengl-accelerate-3.1.6
+-> Downloading to 'L:\save\userdata\Downloads\FSAI_3070_Windows_Kit'
+Detected platform: 
+	 win_amd64
+	 Python 3.11
+	 ZED SDK 5.5
+-> Checking if https://download.stereolabs.com/zedsdk/5.5/whl/win_amd64/pyzed-5.5-cp311-cp311-win_amd64.whl exists and is available
+-> Found ! Downloading python package into L:\save\userdata\Downloads\FSAI_3070_Windows_Kit\pyzed-5.5-cp311-cp311-win_amd64.whl
+-> Installing necessary dependencies
+Done
+Installing OpenGL dependencies required to run the samples
+-> Downloading PyOpenGL-3.1.6-cp311-cp311-win_amd64.whl
+-> Downloading PyOpenGL_accelerate-3.1.6-cp311-cp311-win_amd64.whl
+Pyzed directory is L:\save\userdata\Downloads\FSAI_3070_Windows_Kit\.venv\Lib\site-packages
+{
+  "python": "3.11.17 (main, Oct 21 2026, 17:46:24) [MSC v.1944 64 bit (AMD64)]",
+  "os": "Windows-10-10.0.26300-SP0",
+  "torch": "2.11.0+cu128",
+  "torchvision": "0.26.0+cu128",
+  "numpy": "2.4.6",
+  "opencv": "4.12.0",
+  "ultralytics": "8.4.189",
+  "ultralytics_source": "L:\\save\\userdata\\Downloads\\FSAI_3070_Windows_Kit\\vendor\\ultralytics\\__init__.py",
+  "torch_cuda_build": "12.8",
+  "cuda_available": true,
+  "gpu": [
+    {
+      "name": "NVIDIA GeForce RTX 3070 Laptop GPU",
+      "vram_gib": 7.99951171875
+    }
+  ],
+  "cuda_operation_ok": true,
+  "nvidia_smi": "Wed Oct 28 21:31:03 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 621.01                 KMD Version: 621.01        CUDA UMD Version: 13.5     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 3070 ...  WDDM  |   00000000:01:00.0 Off |                  N/A |\n| N/A   55C    P0             29W /   85W |     147MiB /   8192MiB |      9%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A           24764      C   ...indows-x86_64-none\\python.exe      N/A      |\n+-----------------------------------------------------------------------------------------+\n",
+  "zed_sdk": "5.5.1"
+}
+Python API installed. Read ZED_README.md before the experimental bridge.
+Press any key to continue . . . 

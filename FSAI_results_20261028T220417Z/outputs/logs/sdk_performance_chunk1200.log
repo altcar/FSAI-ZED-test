@@ -1,0 +1,45 @@
+Sim runtime: (5, 5, 1) ABI structure bytes: 100
+[2026-10-28 20:54:42 UTC][ZED][INFO] Logging level INFO
+[ZED][Streaming] No SHM-boost topic found for port 30000. Using UDP backend input.
+[Streaming] Warning : receiving port 30000 is not available (already used)... switching to port 30002. Retrying...
+[Streaming] Backward compatibility required.
+[2026-10-28 20:54:43 UTC][ZED][INFO] [Init]  Serial Number: S/N 110307008
+[2026-10-28 20:54:43 UTC][ZED][WARNING] Simulated ZED camera used ZED XOne GS
+[2026-10-28 20:54:43 UTC][ZED][WARNING] Self Calibration Disabled.
+[2026-10-28 20:54:43 UTC][ZED][WARNING] [Init]  PERFORMANCE is deprecated. Please update your configuration to use NEURAL instead.
+[2026-10-28 20:54:44 UTC][ZED][WARNING] Duplicate frame detected
+[2026-10-28 20:54:44 UTC][ZED][INFO] CORRUPTED FRAME in enum sl::ERROR_CODE __cdecl sl::Camera::grab(struct sl::RuntimeParameters)
+[2026-10-28 20:54:46 UTC][ZED][WARNING] Duplicate frame detected [x29]
+[2026-10-28 20:54:46 UTC][ZED][INFO] CORRUPTED FRAME in enum sl::ERROR_CODE __cdecl sl::Camera::grab(struct sl::RuntimeParameters) [x29]
+[2026-10-28 20:54:48 UTC][ZED][WARNING] Duplicate frame detected [x30]
+[2026-10-28 20:54:48 UTC][ZED][INFO] CORRUPTED FRAME in enum sl::ERROR_CODE __cdecl sl::Camera::grab(struct sl::RuntimeParameters) [x30]
+[2026-10-28 20:54:50 UTC][ZED][WARNING] Duplicate frame detected [x31]
+[2026-10-28 20:54:50 UTC][ZED][INFO] CORRUPTED FRAME in enum sl::ERROR_CODE __cdecl sl::Camera::grab(struct sl::RuntimeParameters) [x31]
+[2026-10-28 20:54:52 UTC][ZED][WARNING] Duplicate frame detected [x30]
+[2026-10-28 20:54:52 UTC][ZED][INFO] CORRUPTED FRAME in enum sl::ERROR_CODE __cdecl sl::Camera::grab(struct sl::RuntimeParameters) [x30]
+[2026-10-28 20:54:54 UTC][ZED][WARNING] Duplicate frame detected [x29]
+[2026-10-28 20:54:54 UTC][ZED][INFO] CORRUPTED FRAME in enum sl::ERROR_CODE __cdecl sl::Camera::grab(struct sl::RuntimeParameters) [x29]
+[2026-10-28 20:54:56 UTC][ZED][WARNING] Duplicate frame detected [x30]
+[2026-10-28 20:54:56 UTC][ZED][INFO] CORRUPTED FRAME in enum sl::ERROR_CODE __cdecl sl::Camera::grab(struct sl::RuntimeParameters) [x30]
+[2026-10-28 20:54:58 UTC][ZED][WARNING] Duplicate frame detected [x30]
+[2026-10-28 20:54:58 UTC][ZED][INFO] CORRUPTED FRAME in enum sl::ERROR_CODE __cdecl sl::Camera::grab(struct sl::RuntimeParameters) [x30]
+[2026-10-28 20:55:00 UTC][ZED][WARNING] Duplicate frame detected [x31]
+[2026-10-28 20:55:00 UTC][ZED][INFO] CORRUPTED FRAME in enum sl::ERROR_CODE __cdecl sl::Camera::grab(struct sl::RuntimeParameters) [x31]
+[2026-10-28 20:55:02 UTC][ZED][WARNING] Duplicate frame detected [x30]
+[2026-10-28 20:55:02 UTC][ZED][INFO] CORRUPTED FRAME in enum sl::ERROR_CODE __cdecl sl::Camera::grab(struct sl::RuntimeParameters) [x30]
+[2026-10-28 20:55:04 UTC][ZED][WARNING] Duplicate frame detected [x30]
+[2026-10-28 20:55:04 UTC][ZED][INFO] CORRUPTED FRAME in enum sl::ERROR_CODE __cdecl sl::Camera::grab(struct sl::RuntimeParameters) [x30]
+[2026-10-28 20:55:06 UTC][ZED][WARNING] Duplicate frame detected [x30]
+[2026-10-28 20:55:06 UTC][ZED][INFO] CORRUPTED FRAME in enum sl::ERROR_CODE __cdecl sl::Camera::grab(struct sl::RuntimeParameters) [x30]
+[2026-10-28 20:55:08 UTC][ZED][WARNING] Duplicate frame detected [x30]
+[2026-10-28 20:55:08 UTC][ZED][INFO] CORRUPTED FRAME in enum sl::ERROR_CODE __cdecl sl::Camera::grab(struct sl::RuntimeParameters) [x30]
+[2026-10-28 20:55:10 UTC][ZED][WARNING] Duplicate frame detected [x30]
+[2026-10-28 20:55:10 UTC][ZED][INFO] CORRUPTED FRAME in enum sl::ERROR_CODE __cdecl sl::Camera::grab(struct sl::RuntimeParameters) [x30]
+[2026-10-28 20:55:12 UTC][ZED][WARNING] Duplicate frame detected [x29]
+[2026-10-28 20:55:12 UTC][ZED][INFO] CORRUPTED FRAME in enum sl::ERROR_CODE __cdecl sl::Camera::grab(struct sl::RuntimeParameters) [x29]
+[2026-10-28 20:55:14 UTC][ZED][WARNING] Duplicate frame detected [x30]
+[2026-10-28 20:55:14 UTC][ZED][INFO] CORRUPTED FRAME in enum sl::ERROR_CODE __cdecl sl::Camera::grab(struct sl::RuntimeParameters) [x30]
+[2026-10-28 20:55:16 UTC][ZED][WARNING] Duplicate frame detected [x30]
+[2026-10-28 20:55:16 UTC][ZED][INFO] CORRUPTED FRAME in enum sl::ERROR_CODE __cdecl sl::Camera::grab(struct sl::RuntimeParameters) [x30]
+[2026-10-28 20:55:18 UTC][ZED][WARNING] Duplicate frame detected [x30]
+[2026-10-28 20:55:18 UTC][ZED][INFO] CORRUPTED FRAME in enum sl::ERROR_CODE __cdecl sl::Camera::grab(struct sl::RuntimeParameters) [x30]

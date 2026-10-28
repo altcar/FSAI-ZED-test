@@ -1,0 +1,46 @@
+{
+  "width": 960,
+  "height": 600,
+  "K": [
+    [
+      636.25,
+      0.0,
+      480.0
+    ],
+    [
+      0.0,
+      636.25,
+      300.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "R_rect_from_original_left": [
+    [
+      0.9997417345823242,
+      0.001104412858654913,
+      0.022698995717059446
+    ],
+    [
+      -0.001082147249604023,
+      0.9999989212875003,
+      -0.0009931672396144649
+    ],
+    [
+      -0.02270006809803926,
+      0.0009683470830785054,
+      0.9997418512857562
+    ]
+  ],
+  "baseline_m": 0.11972448013253958,
+  "model_id": 30,
+  "sim_lens_type": 1,
+  "profile": "virtual ZED X One GS narrow, parallel stereo",
+  "source": "data/stereo_demo, original ZED SN2448592 UE render",
+  "depth_definition": "optical_z_metres_in_rectified_left",
+  "truth_resampling": "nearest depth, inverse rotated rays, corrected optical Z",
+  "both_eye_image_coverage_fraction": 1.0
+}

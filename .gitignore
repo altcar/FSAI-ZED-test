@@ -25,5 +25,5 @@ outputs/yolo_config/
 
 # Generated result archives and downloaded wheels
 *.whl
-FSAI_results_*.zip
+# FSAI_results_*.zip
 

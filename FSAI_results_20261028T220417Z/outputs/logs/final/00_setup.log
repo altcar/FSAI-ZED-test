@@ -1,0 +1,7 @@
+Install Python 3.11 x64 from python.org first. Internet is required for dependencies.
+No suitable Python runtime found
+Pass --list (-0) to see all detected environments on your machine
+or set environment variable PYLAUNCHER_ALLOW_INSTALL to use winget
+or open the Microsoft Store to the requested version.
+Setup FAILED. Keep this window open and read the error above. Do not continue.
+Press any key to continue . . . 
