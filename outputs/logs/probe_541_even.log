@@ -1,0 +1,23 @@
+runtime (5, 4, 1) struct 256
+sn_valid True
+conf C:\ProgramData\Stereolabs\settings\SN110307008.conf True
+calling init_streamer...
+[ZED SIM STREAMER]: *** ZED sim streamer created: 
+* Serial number: 110307008
+* Image width: 960
+* Image height: 600
+* IMU to Camera translation: 0, 0, 0
+* IMU to Camera quaternion: 0, 0, 0, 1
+* Port: 30122
+* FPS: 15
+* Streaming mode: 1
+* Codec: H265
+* Bitrate: 16000
+* Data bitrate: 16000
+* GOP size: 30
+* Camera model: 11
+* Transport layer mode: 1
+
+[2026-10-27 17:22:57 UTC][ZED][INFO] Using DEFAULT HW preset
+[2026-10-27 17:22:57 UTC][ZED][INFO] Using DEFAULT HW preset
+init_status 1

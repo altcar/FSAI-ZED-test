@@ -1,0 +1,135 @@
+Sim runtime: (5, 5, 1) ABI structure bytes: 256
+[2026-10-28 20:58:56 UTC][ZED][INFO] Logging level INFO
+[ZED][Streaming] No SHM-boost topic found for port 30000. Using UDP backend input.
+[Streaming] Warning : receiving port 30000 is not available (already used)... switching to port 30002. Retrying...
+[Streaming] Warning: Failed to retrieve camera settings from sender
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming] Incorrect metadata size. Expecting: 2904 got 1216. Skipping.
+[Streaming]  GEN1 Streaming
+[Streaming] No backward compatibility required.
+[2026-10-28 20:58:57 UTC][ZED][INFO] [Init]  Serial Number: S/N 110307008
+[2026-10-28 20:58:57 UTC][ZED][WARNING] Simulated ZED camera used ZED XOne GS
+[2026-10-28 20:58:57 UTC][ZED][WARNING] Self Calibration Disabled.
+[2026-10-28 20:58:57 UTC][ZED][WARNING] [Init]  PERFORMANCE is deprecated. Please update your configuration to use NEURAL instead.
+[Streaming] Too many failure --> request IDR frame now
+
+image 1/1 L:\save\userdata\Downloads\FSAI_3070_Windows_Kit\outputs\sdk_three_way\sdk_left.png: 768x768 depth 3.12-28.28m, 14.1ms
+Speed: 47.4ms preprocess, 14.1ms inference, 0.2ms postprocess per image at shape (1, 3, 768, 768)
+{
+  "depth_definition": "optical_z_metres",
+  "gt_min_exclusive_m": 0,
+  "gt_max_inclusive_m": 20,
+  "target_pixels": 270876,
+  "posthoc_scale_fit": false,
+  "pairwise": {
+    "DepthNet": {
+      "pixels": 270876,
+      "mae_m": 9.085974513696648,
+      "rmse_m": 9.50151508327985,
+      "bias_m": 8.986637038695473,
+      "abs_rel": 4.449591209385037,
+      "coverage_of_gt": 1.0
+    },
+    "ZED_SDK": {
+      "pixels": 251213,
+      "mae_m": 2.799854415592047,
+      "rmse_m": 6.879192028588007,
+      "bias_m": 2.725412936366337,
+      "abs_rel": 1.0752995926372537,
+      "coverage_of_gt": 0.9274095896277263
+    }
+  },
+  "common_pixels": 251213,
+  "common_pixel_metrics": {
+    "DepthNet": {
+      "pixels": 251213,
+      "mae_m": 9.342850537839713,
+      "rmse_m": 9.695500305806913,
+      "bias_m": 9.249893253822366,
+      "abs_rel": 4.632869530752248
+    },
+    "ZED_SDK": {
+      "pixels": 251213,
+      "mae_m": 2.799854415592047,
+      "rmse_m": 6.879192028588007,
+      "bias_m": 2.725412936366337,
+      "abs_rel": 1.0752995926372537
+    }
+  },
+  "three_way_complete": true,
+  "inference": {
+    "device": "0",
+    "torch": "2.11.0+cu128",
+    "ultralytics": "8.4.189",
+    "imgsz": 768,
+    "speed_ms": {
+      "preprocess": 47.38590000124532,
+      "inference": 14.123799999651965,
+      "postprocess": 0.1788000008673407
+    }
+  },
+  "image_sha256": "9e2d69f41df252f5dee317f0db19a2eefdfd705f131af1a79c04a6c8272455ab",
+  "gt_sha256": "b062f0c938bff6e3b384468b77da1dd8542ef3efaa5f6e05c196b79700a39a1a"
+}
+Results: L:\save\userdata\Downloads\FSAI_3070_Windows_Kit\outputs\sdk_three_way\comparison

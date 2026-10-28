@@ -1,0 +1,29 @@
+=== nvidia-smi ===
+NVIDIA GeForce RTX 3070 Laptop GPU, 555.97, 8192 MiB
+=== video controller ===
+
+Name          : NVIDIA GeForce RTX 3070 Laptop GPU
+DriverVersion : 32.0.15.5597
+DriverDate    : 29/05/2024 01:00:00
+
+=== NVENC ===
+[h264_nvenc @ 0000028426426fc0] Driver does not support the required nvenc API version. Required: 13.1 Found: 12.2
+[h264_nvenc @ 0000028426426fc0] The minimum required Nvidia driver for nvenc is 610.00 or newer
+[vost#0:0/h264_nvenc @ 0000028426426600] [enc:h264_nvenc @ 000002842494db80] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.
+[vf#0:0 @ 0000028426441e80] Error sending frames to consumers: Function not implemented
+[vf#0:0 @ 0000028426441e80] Task finished with error code: -40 (Function not implemented)
+[vf#0:0 @ 0000028426441e80] Terminating thread with return code -40 (Function not implemented)
+[vost#0:0/h264_nvenc @ 0000028426426600] [enc:h264_nvenc @ 000002842494db80] Could not open encoder before EOF
+[vost#0:0/h264_nvenc @ 0000028426426600] Task finished with error code: -22 (Invalid argument)
+[vost#0:0/h264_nvenc @ 0000028426426600] Terminating thread with return code -22 (Invalid argument)
+[out#0/null @ 0000028424943b00] Nothing was written into output file, because at least one of its streams received no packets.
+=== Windows Update ===
+
+TimeCreated : 28/10/2026 13:10:01
+Id          : 19
+Message     : Installation Successful: Windows successfully installed the following update: NVIDIA - Display - 32.0.15.5597
+
+TimeCreated : 28/10/2026 13:06:26
+Id          : 43
+Message     : Installation Started: Windows has started installing the following update: NVIDIA - Display - 32.0.15.5597
+

@@ -1,0 +1,53 @@
+=== setupapi.dev.log excerpts (NVCleanstall nvami.inf) ===
+inf:                Driver package is partially isolated.
+inf:                Driver package is partially isolated.
+!    dvi: Device class {eec5ad98-8080-425f-922a-dabf3de3f69a} is not configurable.
+!    dvi: Device class {4d36e978-e325-11ce-bfc1-08002be10318} is not configurable.
+!    dvi: Device class {eec5ad98-8080-425f-922a-dabf3de3f69a} is not configurable.
+!    dvi: Device class {4d36e978-e325-11ce-bfc1-08002be10318} is not configurable.
+!    dvi:           Device class {4d36e978-e325-11ce-bfc1-08002be10318} is not configurable.
+inf:                Driver package is partially isolated.
+!    inf:                Driver package 'nvam.inf' is NOT configurable.
+sto:                CopyINF driver package 'nvpcf.inf' is already imported as 'oem14.inf' (C:\windows\System32\DriverStore\FileRepository\nvpcf.inf_amd64_b2577cd80e3fb9be\nvpcf.inf)
+sto:                CopyINF driver package 'nvppc.inf' is already imported as 'oem15.inf' (C:\windows\System32\DriverStore\FileRepository\nvppc.inf_amd64_fb709ac3e9157861\nvppc.inf)
+dvs:           Installing driver 'nvppc.inf' on all applicable targets due to relation with 'nvam.inf_amd64_900a074fe80431cd'.
+dvs:           Installing driver 'nvpcf.inf' on all applicable targets due to relation with 'nvam.inf_amd64_900a074fe80431cd'.
+utl:                          Driver INF     - oem14.inf (C:\windows\System32\DriverStore\FileRepository\nvpcf.inf_amd64_b2577cd80e3fb9be\nvpcf.inf)
+utl:                Driver INF     - oem14.inf (C:\windows\System32\DriverStore\FileRepository\nvpcf.inf_amd64_b2577cd80e3fb9be\nvpcf.inf)
+sto: {Setup Import Driver Package: c:\users\v9\appdata\local\temp\nvcleanstall\display.driver\nvami.inf} 13:10:03.653
+inf:      Driver Version: 10/19/2026,32.0.16.2101
+sto:      {Copy Driver Package: c:\users\v9\appdata\local\temp\nvcleanstall\display.driver\nvami.inf} 13:10:08.805
+sto:           Driver Package = c:\users\v9\appdata\local\temp\nvcleanstall\display.driver\nvami.inf
+!    sto:           CopyINF driver package 'c:\users\v9\appdata\local\temp\nvcleanstall\display.driver\nvpcf.inf' does not exist
+!    sto:           CopyINF driver package 'c:\users\v9\appdata\local\temp\nvcleanstall\display.driver\nvppc.inf' does not exist
+flq:                Copying 'c:\users\v9\appdata\local\temp\nvcleanstall\display.driver\nvami.inf' to 'C:\Users\V9\AppData\Local\Temp\{63f7a5e5-41ac-5541-a78b-80ec34d07c3e}\nvami.inf'.
+sto:      {Stage Driver Package: C:\Users\V9\AppData\Local\Temp\{63f7a5e5-41ac-5541-a78b-80ec34d07c3e}\nvami.inf} 13:10:23.171
+inf:           Driver Version = 10/19/2026,32.0.16.2101
+!    sto:           CopyINF driver package 'C:\Users\V9\AppData\Local\Temp\{63f7a5e5-41ac-5541-a78b-80ec34d07c3e}\nvpcf.inf' does not exist
+!    sto:           CopyINF driver package 'C:\Users\V9\AppData\Local\Temp\{63f7a5e5-41ac-5541-a78b-80ec34d07c3e}\nvppc.inf' does not exist
+inf:           {Query Configurability: C:\Users\V9\AppData\Local\Temp\{63f7a5e5-41ac-5541-a78b-80ec34d07c3e}\nvami.inf} 13:10:31.516
+inf:                Driver package is partially isolated.
+!    inf:                Driver package 'nvami.inf' is NOT configurable.
+=== pnputil display drivers ===
+Driver Version:     05/09/2023 22.230.0.8
+Original Name:      nvam.inf
+Class Name:         Display
+Driver Version:     05/29/2024 32.0.15.5597
+Driver Version:     05/29/2024 1.4.0.1
+Driver Version:     05/29/2024 32.0.15.5546
+Driver Version:     05/04/2023 22.1230.0.3
+Driver Version:     11/29/2016 16.0.7629.4000
+Driver Version:     06/21/2006 10.0.26100.4484
+Driver Version:     09/23/2022 1.0.0.9
+Driver Version:     10/05/2022 11.0.6000.282
+Driver Version:     10/17/2022 1.0.570.0
+Driver Version:     10/18/2022 12.85.1075.86
+Driver Version:     09/09/2021 1125.2.909.2021
+Driver Version:     09/24/2020 1.41.1030.0
+Driver Version:     09/24/2020 1.41.1030.0
+Driver Version:     09/24/2020 1.41.1030.0
+Class Name:         Display
+Driver Version:     08/31/2021 2.0.0.1
+Driver Version:     06/16/2026 1.0.4.7057
+=== nvidia-smi ===
+555.97

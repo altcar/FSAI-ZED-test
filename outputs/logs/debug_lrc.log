@@ -1,0 +1,42 @@
+dl valid >0: 204728
+dr raw stats: >1 26556 <-1 0 between 549444
+dr q pos [  1.25     7.625   43.125   86.4375 143.125 ]
+dr as-is     x-d tol=0.5:     229 ( 0.11% of left-valid)
+dr as-is     x-d tol=1.0:    2085 ( 1.02% of left-valid)
+dr as-is     x+d tol=0.5:     272 ( 0.13% of left-valid)
+dr as-is     x+d tol=1.0:    2208 ( 1.08% of left-valid)
+dr negated   x-d tol=0.5:    1037 ( 0.51% of left-valid)
+dr negated   x-d tol=1.0:    3181 ( 1.55% of left-valid)
+dr negated   x+d tol=0.5:     987 ( 0.48% of left-valid)
+dr negated   x+d tol=1.0:    3207 ( 1.57% of left-valid)
+dr as-is same+-2 tol=0.5:     246 ( 0.12%)
+dr as-is same+-2 tol=1.0:    2059 ( 1.01%)
+dr as-is same+-1 tol=0.5:     257 ( 0.13%)
+dr as-is same+-1 tol=1.0:    2118 ( 1.03%)
+dr as-is same++0 tol=0.5:     274 ( 0.13%)
+dr as-is same++0 tol=1.0:    2170 ( 1.06%)
+dr as-is same++1 tol=0.5:     282 ( 0.14%)
+dr as-is same++1 tol=1.0:    2174 ( 1.06%)
+dr as-is same++2 tol=0.5:     276 ( 0.13%)
+dr as-is same++2 tol=1.0:    2176 ( 1.06%)
+left (830,411) d=22.69 -> expected right x=807.3; hits=[715, 716, 717, 718, 719, 720]...
+left (600,506) d=42.75 -> expected right x=557.2; hits=[]
+left (594,577) d=57.12 -> expected right x=536.9; hits=[]
+left (749,498) d=40.81 -> expected right x=708.2; hits=[]
+left (722,421) d=25.25 -> expected right x=696.8; hits=[]
+left (924,551) d=52.69 -> expected right x=871.3; hits=[]
+left (593,561) d=54.00 -> expected right x=539.0; hits=[]
+left (601,317) d=4.81 -> expected right x=596.2; hits=[]
+left (355,472) d=35.56 -> expected right x=319.4; hits=[]
+left (294,474) d=35.88 -> expected right x=258.1; hits=[]
+left (521,592) d=60.81 -> expected right x=460.2; hits=[]
+left (445,330) d=8.38 -> expected right x=436.6; hits=[945, 946, 950, 951]
+left (737,308) d=2.81 -> expected right x=734.2; hits=[]
+left (678,380) d=16.69 -> expected right x=661.3; hits=[]
+left (802,509) d=43.00 -> expected right x=759.0; hits=[]
+left disp (disp12MaxDiff=1): valid=204728 eval=195919 coverage=72.33% MAE=0.672 RMSE=4.030 bias=+0.386
+left disp (no internal L/R check): valid=204728 eval=195919 coverage=72.33% MAE=0.672 RMSE=4.030 bias=+0.386
+GT subset dr as-is     x-d:     362 / 196256
+GT subset dr as-is     x+d:     440 / 196256
+GT subset dr negated   x-d:    1201 / 196256
+GT subset dr negated   x+d:    1195 / 196256

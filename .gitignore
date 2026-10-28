@@ -1,0 +1,24 @@
+# Local environments and caches
+.venv/
+.venv_partial_L/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Downloaded SDK/runtime binaries (large; re-download per README)
+zed_runtime/*.dll
+zed_runtime/*.tar.gz
+zed_runtime/*.zip
+zed_runtime/download_receipt.json
+
+# Large regenerable arrays and binaries
+outputs/**/*.npy
+outputs/**/*.npz
+outputs/**/*.dll
+outputs/**/*.exe
+outputs/**/bridge_*/
+outputs/**/*.zip
+outputs/yolo_config/
+
+# Keep: reports, figures, JSON/CSV, logs, prepared PNGs
