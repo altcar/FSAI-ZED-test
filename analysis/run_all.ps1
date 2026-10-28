@@ -73,10 +73,11 @@ Invoke-GpuStep 'stereo_validation' @(
     'analysis\stereo_depth_validation.py', '--device', '0'
 )
 
-# Build STEREO_DEPTH_VALIDATION.md from outputs\stereo_validation\results.json.
-Invoke-Step 'report' @('analysis\build_report.py')
-
+# The reports are consolidated into FSAI_STEREO_DEPTH_REPORT.md + the notebook.
+# The legacy separate-report builders are not run here; update the combined
+# report manually if the rerun changes the metrics.
 Write-Host ''
-Write-Host 'Done. Report: STEREO_DEPTH_VALIDATION.md'
+Write-Host 'Done. Combined report: FSAI_STEREO_DEPTH_REPORT.md'
+Write-Host 'Notebook: FSAI_STEREO_RESULTS.ipynb'
 Write-Host 'Figures: outputs\stereo_validation\figures'
 Write-Host 'Raw results: outputs\stereo_validation\results.json'

@@ -18,9 +18,8 @@ if errorlevel 1 goto fail
 if errorlevel 1 goto fail
 ".venv\Scripts\python.exe" scripts\compare.py --image outputs\sdk_three_way\sdk_left_corrected.png --gt outputs\sdk_three_way\ue_z_m.npy --sdk-depth outputs\sdk_three_way\sdk_z_m.npy --device 0 --output outputs\sdk_three_way\comparison_corrected
 if errorlevel 1 goto fail
-".venv\Scripts\python.exe" analysis\build_sdk_success_report.py
-if errorlevel 1 goto fail
 echo Success. See outputs\sdk_three_way\comparison_corrected\summary.json.
+echo Update FSAI_STEREO_DEPTH_REPORT.md if the new metrics differ.
 pause
 exit /b 0
 :nosdk
