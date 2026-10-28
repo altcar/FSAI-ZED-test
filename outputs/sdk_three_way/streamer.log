@@ -15,8 +15,8 @@ Sim runtime: (5, 5, 1) ABI structure bytes: 256
 * Camera model: 11
 * Transport layer mode: 2
 
-[2026-10-28 20:58:56 UTC][ZED][INFO] Using DEFAULT HW preset
-[2026-10-28 20:58:56 UTC][ZED][INFO] Using DEFAULT HW preset
+[2026-10-28 21:33:03 UTC][ZED][INFO] Using DEFAULT HW preset
+[2026-10-28 21:33:03 UTC][ZED][INFO] Using DEFAULT HW preset
 [ZED SIM STREAMER]: Failed to stream data: FRAME_DROPPED
 [ZED SIM STREAMER]: Failed to stream data: ENCODING_FAILED
 [ZED SIM STREAMER]: Streamer disposed

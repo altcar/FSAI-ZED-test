@@ -487,6 +487,11 @@ R/B-corrected SDK left image, so DepthNet is evaluated fairly. The original
    `"H265, 16000 kbps (lossy)"`; the actual producer for this capture used
    H.264 / 3000 kbps / chunk 1200 / transport BOTH. The rest of the capture
    metadata (SDK 5.5.1, PERFORMANCE, K, baseline, timestamp) is accurate.
+7. **Run-to-run variation.** Two identical PERFORMANCE captures gave
+   251,213 px / MAE 2.800 m and 250,089 px / MAE 3.117 m. This report uses the
+   final capture (250,089 / 3.117). The variation comes from H.264/IDR/duplicate
+   frame timing and the skipped 1,216-byte metadata; it is not a deterministic
+   benchmark.
 
 ---
 
@@ -516,8 +521,9 @@ to obtain a protocol-matched 5.5.1 runtime (the published 5.2.0 runtime sends
 - [Issue #63 — struct fields, chunk ≤1200, H.264 fallback](https://github.com/stereolabs/zed-isaac-sim/issues/63)
 - [Issue #61 — first-frame ENCODING_FAILED fixed in 5.3](https://github.com/stereolabs/zed-isaac-sim/issues/61)
 - [Pinned `build.bat` — `SL_ZED_VERSION=5.2.0` runtime URL](https://github.com/stereolabs/zed-isaac-sim/blob/f9160973f321ec743f626188244cd9702d85bec6/build.bat)
-- Local proof: `outputs/logs/sdk_h264_3000.log` (metadata mismatch and IDR),
-  `outputs/sdk_three_way/sdk_capture.json`, `comparison/summary.json`.
+- Local proof: `outputs/logs/final/sdk_performance_final.log` (metadata
+  mismatch/IDR), `outputs/logs/final/sdk_compare_corrected_final.log`,
+  `outputs/sdk_three_way/sdk_capture.json`, `comparison_corrected/summary.json`.
 """
     (ROOT / 'ZED_SDK_SIMULATION_RESULT.md').write_text(report, encoding='utf-8')
     # machine-readable

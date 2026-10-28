@@ -41,7 +41,7 @@
     0.0
   ],
   "depth_unit": "metres",
-  "image_timestamp_ns": 2066666646,
+  "image_timestamp_ns": 2133333312,
   "input": "repeated static UE stereo pair; RGB only, no GT ingestion",
   "self_calibration": false,
   "depth_stabilization": 0,

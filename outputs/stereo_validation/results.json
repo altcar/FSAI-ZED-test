@@ -1,5 +1,5 @@
 {
-  "run_utc": "2026-10-27T08:02:05.293997+00:00",
+  "run_utc": "2026-10-28T21:32:33.434724+00:00",
   "kit_root": "L:\\save\\userdata\\Downloads\\FSAI_3070_Windows_Kit",
   "hashes": {
     "rectified_left_png": "2a7df297d40d0314d9e835be90d2770882c345f73421d11f2a26ce68d1a6b7c6",
@@ -20,7 +20,7 @@
       "os": "Windows-10-10.0.26300-SP0",
       "torch": "2.11.0+cu128",
       "torchvision": "0.26.0+cu128",
-      "numpy": "2.2.6",
+      "numpy": "2.4.6",
       "opencv": "4.12.0",
       "ultralytics": "8.4.189",
       "ultralytics_source": "L:\\save\\userdata\\Downloads\\FSAI_3070_Windows_Kit\\vendor\\ultralytics\\__init__.py",
@@ -33,8 +33,8 @@
         }
       ],
       "cuda_operation_ok": true,
-      "nvidia_smi": "Tue Oct 27 08:00:21 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 555.97                 Driver Version: 555.97         CUDA Version: 12.5     |\n|-----------------------------------------+------------------------+----------------------+\n| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 3070 ...  WDDM  |   00000000:01:00.0 Off |                  N/A |\n| N/A   74C    P0             34W /   80W |     518MiB /   8192MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n                                                                                         \n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A     10720    C+G   ...SOverlayRenderer-Win64-Shipping.exe      N/A      |\n|    0   N/A  N/A     27132    C+G   ...inaries\\Win64\\EpicGamesLauncher.exe      N/A      |\n|    0   N/A  N/A     30512      C   ...1.17-windows-x86_64-none\\python.exe      N/A      |\n|    0   N/A  N/A     34028    C+G   ...ogram Files\\WordCraft\\wordcraft.exe      N/A      |\n+-----------------------------------------------------------------------------------------+\n",
-      "zed_sdk": "not installed: No module named 'pyzed'"
+      "nvidia_smi": "Wed Oct 28 21:31:03 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 621.01                 KMD Version: 621.01        CUDA UMD Version: 13.5     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 3070 ...  WDDM  |   00000000:01:00.0 Off |                  N/A |\n| N/A   55C    P0             29W /   85W |     147MiB /   8192MiB |      9%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A           24764      C   ...indows-x86_64-none\\python.exe      N/A      |\n+-----------------------------------------------------------------------------------------+\n",
+      "zed_sdk": "5.5.1"
     },
     "replay_summary": {
       "depth_definition": "optical_z_metres",
@@ -111,9 +111,9 @@
         "ultralytics": "8.4.189",
         "imgsz": 768,
         "speed_ms": {
-          "preprocess": 484.8724999901606,
-          "inference": 1123.0409999989206,
-          "postprocess": 35.30359998694621
+          "preprocess": 36.47099999943748,
+          "inference": 16.92940000066301,
+          "postprocess": 0.17870000010589138
         }
       },
       "image_sha256": "6f7aa9b40046f1212cfedad9369f0ccd189570ab7b44ff6dedde166c10e3fadf",
@@ -195,12 +195,12 @@
     "depth_definition": "optical_z_metres_in_rectified_left",
     "truth_resampling": "nearest depth, inverse rotated rays, corrected optical Z",
     "both_eye_image_coverage_fraction": 1.0,
-    "sgbm_ms": 1160.5752000032226
+    "sgbm_ms": 165.90670000005048
   },
   "timings": {
-    "rectify_s": 0.6445321999926819,
-    "depthnet_wall_s": 29.014548899998772,
-    "sgbm_ms": 1160.5752000032226
+    "rectify_s": 0.19898570000077598,
+    "depthnet_wall_s": 5.55033259999982,
+    "sgbm_ms": 165.90670000005048
   },
   "environment": {
     "python": "3.11.17 (main, Oct 21 2026, 17:46:24) [MSC v.1944 64 bit (AMD64)]",
@@ -211,14 +211,14 @@
     "device": "0",
     "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
     "vram_total_gib": 7.99951171875,
-    "peak_allocated_gib": 0.1756138801574707,
+    "peak_allocated_gib": 0.17561912536621094,
     "peak_reserved_gib": 0.21484375,
     "cpu": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
     "ram_gib": 23.694671630859375,
     "opencv": "4.12.0",
     "numpy": "2.2.6",
     "matplotlib": "3.11.2",
-    "nvidia_smi": "NVIDIA GeForce RTX 3070 Laptop GPU, 8192 MiB, 555.97"
+    "nvidia_smi": "NVIDIA GeForce RTX 3070 Laptop GPU, 8192 MiB, 621.01"
   },
   "inference": {
     "device": "0",
@@ -226,14 +226,14 @@
     "ultralytics": "8.4.189",
     "imgsz": 768,
     "speed_ms": {
-      "preprocess": 124.05339999531861,
-      "inference": 1138.8279999955557,
-      "postprocess": 146.1249999993015
+      "preprocess": 31.189900000754278,
+      "inference": 15.771999998833053,
+      "postprocess": 0.18149999959859997
     },
     "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
     "torch_cuda_build": "12.8",
     "vram_total_gib": 7.99951171875,
-    "peak_allocated_gib": 0.1756138801574707,
+    "peak_allocated_gib": 0.17561912536621094,
     "peak_reserved_gib": 0.21484375
   },
   "main": {
@@ -680,7 +680,7 @@
       "mae_m": 0.7570091359659264,
       "rmse_m": 4.052631750306993,
       "bias_m": 0.4377637172254714,
-      "runtime_ms": 2320.149899998796
+      "runtime_ms": 163.23750000083237
     },
     {
       "block_size": 5,
@@ -691,7 +691,7 @@
       "mae_m": 0.791104064581406,
       "rmse_m": 4.300646826294339,
       "bias_m": 0.4532966753404002,
-      "runtime_ms": 1846.6317999991588
+      "runtime_ms": 173.7624000015785
     },
     {
       "block_size": 7,
@@ -702,7 +702,7 @@
       "mae_m": 0.8532891123124255,
       "rmse_m": 4.652498333134017,
       "bias_m": 0.491725686937552,
-      "runtime_ms": 1461.2023000081535
+      "runtime_ms": 178.69040000005043
     }
   ],
   "regions": [

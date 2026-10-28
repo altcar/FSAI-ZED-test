@@ -1,16 +1,17 @@
 # Stereo Camera Depth Validation — Windows / RTX 3070
 
-**Run (UTC):** 2026-10-27T08:02:05.293997+00:00
+**Run (UTC):** 2026-10-28T21:32:33.434724+00:00
 **Kit:** `FSAI_3070_Windows_Kit` (461-file manifest)
 **Host:** Windows-10-10.0.26300-SP0
-**GPU:** NVIDIA GeForce RTX 3070 Laptop GPU, 8192 MiB, 555.97
+**GPU:** NVIDIA GeForce RTX 3070 Laptop GPU, 8192 MiB, 621.01
 **Verdict:** **PASS (pipeline + geometry) · LIMITED (far-field stereo accuracy) · SDK CAPTURE VALID (PERFORMANCE)**
 
 > **Scope and integrity.** This run validates two things on the bundled data: (1) the
 > FSAI-Seg DepthNet on the rectified left image, and (2) a standard OpenCV SGBM
 > stereo baseline on the rectified left/right pair. Both are compared with the UE
 > optical-Z truth in metres. **A valid ZED SDK depth capture was produced** in
-> PERFORMANCE mode: 251,213 valid pixels (92.74%), MAE 2.800 m. It is **not**
+> PERFORMANCE mode: 250,089 valid pixels
+> (92.33%), MAE 3.117 m. It is **not**
 > NEURAL mode: the extracted SDK's TensorRT DLLs were not on the consumer's
 > search path, and the only stable Windows producer path used H.264 at
 > 3000 kbps. The 5.2.0-labelled runtime also sends 1,216-byte camera metadata
@@ -39,7 +40,7 @@
 | Lower common-pixel MAE | **SGBM** (0.791 m vs 2.530 m, 68.7% lower) |
 | Epipolar alignment | median abs(dy) 0.12 px · P95 1.21 px · 225 SIFT matches |
 | Disparity consistency | median abs(Δd) 0.26 px · 89.5% within 1 px |
-| ZED SDK three-way | **VALID (PERFORMANCE)** — SDK 5.5.1 capture valid: 251,213 px, MAE 2.800 m, coverage 92.74% (PERFORMANCE, H.264 3000) |
+| ZED SDK three-way | **VALID (PERFORMANCE)** — SDK 5.5.1 capture valid: 250,089 px, MAE 3.117 m, coverage 92.33% (PERFORMANCE, H.264 3000) |
 
 **Depth dependence matters.** On common pixels, SGBM's aggregate MAE is lower,
 but the per-bin table shows a crossover: SGBM is near-perfect in 0–4 m
@@ -80,7 +81,7 @@ not ranked against each other.
 | Stereo rectification | PASS | `outputs/stereo_validation/prepared/geometry.json` |
 | DepthNet on rectified left (GPU) | PASS | `outputs/stereo_validation/results.json` |
 | OpenCV SGBM stereo baseline | PASS | same |
-| ZED SDK depth / three-way comparison | **PASS (PERFORMANCE)** | 251,213 common px; SDK MAE 2.800 m, coverage 92.74%; see `ZED_SDK_SIMULATION_RESULT.md` |
+| ZED SDK depth / three-way comparison | **PASS (PERFORMANCE)** | 250,089 common px; SDK MAE 3.117 m, coverage 92.33%; see `ZED_SDK_SIMULATION_RESULT.md` |
 
 The SGBM baseline is deliberately labelled as OpenCV SGBM, **not** ZED SDK. It
 is included because the request was to test stereo-camera depth, and SGBM is a
@@ -103,7 +104,7 @@ geometry without a proprietary SDK.
 | Matplotlib | 3.11.2 |
 | GPU | NVIDIA GeForce RTX 3070 Laptop GPU |
 | VRAM total | 8.00 GiB |
-| NVIDIA driver | 555.97 |
+| NVIDIA driver | 621.01 |
 | CPU | Intel64 Family 6 Model 140 Stepping 1, GenuineIntel |
 | System RAM | 23.7 GiB |
 | ZED SDK | 5.5.1 capture valid (PERFORMANCE; H.264 3000) |
@@ -134,7 +135,7 @@ virtual rig:
 | Depth definition | optical_z_metres_in_rectified_left |
 | Truth resampling | nearest depth, inverse rotated rays, corrected optical Z |
 | Both-eye image coverage | 100.00% |
-| Rectification time | 0.64 s |
+| Rectification time | 0.20 s |
 
 ![Rectified stereo pair](outputs/stereo_validation/figures/fig01_input_pair.png)
 
@@ -391,9 +392,9 @@ methods are charted; the distant cones are smaller than that threshold.*
 
 | Block size | Num disp | Uniqueness | Valid px | Coverage | MAE (m) | RMSE (m) | Bias (m) | Runtime (ms) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 3 | 160 | 10 | 193,388 | 71.4% | 0.757 | 4.053 | +0.438 | 2320 |
-| 5 | 160 | 10 | 197,731 | 73.0% | 0.791 | 4.301 | +0.453 | 1847 |
-| 7 | 160 | 10 | 200,225 | 73.9% | 0.853 | 4.652 | +0.492 | 1461 |
+| 3 | 160 | 10 | 193,388 | 71.4% | 0.757 | 4.053 | +0.438 | 163 |
+| 5 | 160 | 10 | 197,731 | 73.0% | 0.791 | 4.301 | +0.453 | 174 |
+| 7 | 160 | 10 | 200,225 | 73.9% | 0.853 | 4.652 | +0.492 | 179 |
 
 *Table 3 — Sensitivity to block size at fixed 160 disparities, uniqueness 10,
 and the same internal left-right check. These are robustness numbers, not a
@@ -481,13 +482,13 @@ the rectified K/baseline, and produces a depth capture:
 
 | Quantity | SDK | DepthNet on the same corrected image |
 |---|---:|---:|
-| Valid pixels | 251,213 | 270,876 |
-| Coverage | 92.74% | 100% |
-| MAE | **2.800 m** | **2.211 m** |
-| RMSE | 6.879 m | 2.464 m |
-| Bias | +2.725 m | +1.567 m |
-| Median abs error | 1.631 m | 2.122 m |
-| P90 abs error | 2.910 m | 2.725 m |
+| Valid pixels | 250,089 | 270,876 |
+| Coverage | 92.33% | 100.00% |
+| MAE | **3.117 m** | **2.312 m** |
+| RMSE | 7.930 m | 2.548 m |
+| Bias | +3.026 m | +1.688 m |
+| Median abs error | 1.815 m | 2.239 m |
+| P90 abs error | 3.287 m | 2.872 m |
 
 DepthNet has the lower MAE/RMSE and full coverage; the SDK has the lower median
 error but a much heavier tail. On the original `sdk_left.png` the saved file had

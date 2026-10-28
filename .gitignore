@@ -22,3 +22,8 @@ outputs/**/*.zip
 outputs/yolo_config/
 
 # Keep: reports, figures, JSON/CSV, logs, prepared PNGs
+
+# Generated result archives and downloaded wheels
+*.whl
+FSAI_results_*.zip
+

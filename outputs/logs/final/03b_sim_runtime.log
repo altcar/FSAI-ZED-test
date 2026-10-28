@@ -1,0 +1,9 @@
+Optional official simulator runtime download. Read ZED_README.md first.
+Traceback (most recent call last):
+  File "L:\save\userdata\Downloads\FSAI_3070_Windows_Kit\scripts\download_sim_runtime.py", line 52, in <module>
+    main()
+  File "L:\save\userdata\Downloads\FSAI_3070_Windows_Kit\scripts\download_sim_runtime.py", line 22, in main
+    raise FileExistsError('zed_runtime already contains DLLs; preserve or move them before downloading')
+FileExistsError: zed_runtime already contains DLLs; preserve or move them before downloading
+Download failed. Preserve the error above.
+Press any key to continue . . . 

@@ -136,6 +136,8 @@ def main():
         zed_status = 'not installed (SDK directory absent)'
     sdk_attempt = read_json(ROOT / 'outputs' / 'sdk_three_way' / 'preflight.json')
     sdk_results = read_json(ROOT / 'outputs' / 'sdk_three_way' / 'results.json')
+    sdk_m = sdk_results.get('sdk', {}) if sdk_results else {}
+    sdk_d = sdk_results.get('depthnet_same_image', {}) if sdk_results else {}
     sdk_invalid = (ROOT / 'outputs' / 'sdk_three_way' / 'INVALID_CAPTURE.txt').is_file()
     sdk_blocked = bool(sdk_attempt) and not (
         ROOT / 'outputs' / 'sdk_three_way' / 'comparison' / 'summary.json').is_file()
@@ -168,7 +170,8 @@ def main():
 > FSAI-Seg DepthNet on the rectified left image, and (2) a standard OpenCV SGBM
 > stereo baseline on the rectified left/right pair. Both are compared with the UE
 > optical-Z truth in metres. **A valid ZED SDK depth capture was produced** in
-> PERFORMANCE mode: 251,213 valid pixels (92.74%), MAE 2.800 m. It is **not**
+> PERFORMANCE mode: {sdk_m.get('pixels', 0):,} valid pixels
+> ({sdk_m.get('coverage', 0) * 100:.2f}%), MAE {sdk_m.get('mae_m', 0):.3f} m. It is **not**
 > NEURAL mode: the extracted SDK's TensorRT DLLs were not on the consumer's
 > search path, and the only stable Windows producer path used H.264 at
 > 3000 kbps. The 5.2.0-labelled runtime also sends 1,216-byte camera metadata
@@ -238,7 +241,7 @@ not ranked against each other.
 | Stereo rectification | PASS | `outputs/stereo_validation/prepared/geometry.json` |
 | DepthNet on rectified left (GPU) | PASS | `outputs/stereo_validation/results.json` |
 | OpenCV SGBM stereo baseline | PASS | same |
-| ZED SDK depth / three-way comparison | **PASS (PERFORMANCE)** | 251,213 common px; SDK MAE 2.800 m, coverage 92.74%; see `ZED_SDK_SIMULATION_RESULT.md` |
+| ZED SDK depth / three-way comparison | **PASS (PERFORMANCE)** | {sdk_m.get('pixels', 0):,} common px; SDK MAE {sdk_m.get('mae_m', 0):.3f} m, coverage {sdk_m.get('coverage', 0) * 100:.2f}%; see `ZED_SDK_SIMULATION_RESULT.md` |
 
 The SGBM baseline is deliberately labelled as OpenCV SGBM, **not** ZED SDK. It
 is included because the request was to test stereo-camera depth, and SGBM is a
@@ -601,13 +604,13 @@ the rectified K/baseline, and produces a depth capture:
 
 | Quantity | SDK | DepthNet on the same corrected image |
 |---|---:|---:|
-| Valid pixels | 251,213 | 270,876 |
-| Coverage | 92.74% | 100% |
-| MAE | **2.800 m** | **2.211 m** |
-| RMSE | 6.879 m | 2.464 m |
-| Bias | +2.725 m | +1.567 m |
-| Median abs error | 1.631 m | 2.122 m |
-| P90 abs error | 2.910 m | 2.725 m |
+| Valid pixels | {sdk_m.get('pixels', 0):,} | {sdk_d.get('pixels', 0):,} |
+| Coverage | {sdk_m.get('coverage', 0) * 100:.2f}% | {sdk_d.get('coverage', 0) * 100:.2f}% |
+| MAE | **{sdk_m.get('mae_m', 0):.3f} m** | **{sdk_d.get('mae_m', 0):.3f} m** |
+| RMSE | {sdk_m.get('rmse_m', 0):.3f} m | {sdk_d.get('rmse_m', 0):.3f} m |
+| Bias | {sdk_m.get('bias_m', 0):+.3f} m | {sdk_d.get('bias_m', 0):+.3f} m |
+| Median abs error | {sdk_m.get('median_abs_error_m', 0):.3f} m | {sdk_d.get('median_abs_error_m', 0):.3f} m |
+| P90 abs error | {sdk_m.get('p90_abs_error_m', 0):.3f} m | {sdk_d.get('p90_abs_error_m', 0):.3f} m |
 
 DepthNet has the lower MAE/RMSE and full coverage; the SDK has the lower median
 error but a much heavier tail. On the original `sdk_left.png` the saved file had

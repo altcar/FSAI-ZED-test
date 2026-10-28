@@ -6,8 +6,8 @@
 **Verdict:** **PASS — real ZED SDK depth capture and three-way comparison (PERFORMANCE mode, H.264 stream).**
 
 > This is a genuine ZED SDK result: the SDK opened the virtual ZED XOne GS,
-> received the rectified pair, and computed depth over **251,213 valid
-> pixels (92.74% of truth)**. It is **PERFORMANCE** mode (not
+> received the rectified pair, and computed depth over **250,089 valid
+> pixels (92.33% of truth)**. It is **PERFORMANCE** mode (not
 > NEURAL) and the stream is **H.264 at 3000 kbps**, because of the workarounds
 > below. It is not the kit's original NEURAL/H.265/16000 configuration.
 
@@ -17,25 +17,25 @@
 
 | Method | Valid px | Coverage | MAE | RMSE | Bias | Median | P90 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| ZED SDK | 251,213 | 92.74% | 2.800 | 6.879 | +2.725 | 1.631 | 2.910 |
-| DepthNet | 270,876 | 100.00% | 2.211 | 2.464 | +1.567 | 2.122 | 2.725 |
+| ZED SDK | 250,089 | 92.33% | 3.117 | 7.930 | +3.026 | 1.815 | 3.287 |
+| DepthNet | 270,876 | 100.00% | 2.312 | 2.548 | +1.688 | 2.239 | 2.872 |
 
-**Same common pixels (251,213):**
+**Same common pixels (250,089):**
 
 | Method | MAE | RMSE | Bias | Median | P90 |
 | --- | --- | --- | --- | --- | --- |
-| ZED SDK | 2.800 | 6.879 | +2.725 | 1.631 | 2.910 |
-| DepthNet | 2.210 | 2.428 | +1.703 | 2.142 | 2.706 |
+| ZED SDK | 3.117 | 7.930 | +3.026 | 1.815 | 3.287 |
+| DepthNet | 2.316 | 2.528 | +1.802 | 2.256 | 2.850 |
 
 On the **same SDK-received image** (after correcting the saved file's R/B
 swap, PSNR 28.80 dB vs the prepared left), DepthNet has the lower MAE/RMSE:
-**2.210 m / 2.428 m** versus the SDK's
-**2.800 m / 6.879 m**. The SDK has the lower
-median error (**1.631 m** vs
-**2.142 m**) but a much heavier tail
-(P90 2.910 m vs 2.706 m;
-≥3 m rate 9.7% vs 6.3%). The SDK
-covers 92.74% of truth; DepthNet covers 100%. This is a
+**2.316 m / 2.528 m** versus the SDK's
+**3.117 m / 7.930 m**. The SDK has the lower
+median error (**1.815 m** vs
+**2.256 m**) but a much heavier tail
+(P90 3.287 m vs 2.850 m;
+≥3 m rate 12.7% vs 6.7%). The SDK
+covers 92.33% of truth; DepthNet covers 100%. This is a
 mixed result, not a single-method win.
 
 The original `sdk_left.png` was written with a BGRA/RGB channel swap; that
@@ -132,7 +132,7 @@ ground and cones; the yellow band at the horizon is the 20 m display cap.*
 
 ![Scatter](outputs/sdk_three_way/figures/fig02_scatter.png)
 
-*Figure 2 — Prediction vs truth on the same 251,213
+*Figure 2 — Prediction vs truth on the same 250,089
 common pixels.*
 
 ![Bins](outputs/sdk_three_way/figures/fig03_bins.png)
@@ -162,33 +162,33 @@ R/B-corrected SDK left image, so DepthNet is evaluated fairly. The original
 
 | Method | Truth bin (m) | Common px | Coverage | MAE (m) | RMSE (m) | Bias (m) | P90 abs (m) |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| ZED SDK | 0–2 | 107,284 | 95.9% | 2.387 | 4.218 | +2.387 | 2.458 |
-| DepthNet | 0–2 | 107,284 | 100.0% | 2.337 | 2.355 | +2.337 | 2.658 |
-| ZED SDK | 2–4 | 86,036 | 96.8% | 1.701 | 4.565 | +1.700 | 1.824 |
-| DepthNet | 2–4 | 86,036 | 100.0% | 2.070 | 2.116 | +2.070 | 2.517 |
-| ZED SDK | 4–6 | 28,583 | 98.2% | 2.096 | 5.967 | +1.922 | 2.553 |
-| DepthNet | 4–6 | 28,583 | 100.0% | 1.831 | 2.010 | +1.815 | 3.184 |
-| ZED SDK | 6–8 | 12,226 | 83.1% | 10.313 | 18.893 | +10.049 | 34.879 |
-| DepthNet | 6–8 | 12,226 | 100.0% | 0.931 | 1.195 | +0.741 | 2.156 |
-| ZED SDK | 8–10 | 5,673 | 66.4% | 7.053 | 12.516 | +6.847 | 17.421 |
-| DepthNet | 8–10 | 5,673 | 100.0% | 0.954 | 1.134 | -0.842 | 1.785 |
-| ZED SDK | 10–12 | 4,193 | 70.0% | 6.110 | 11.013 | +5.706 | 17.195 |
-| DepthNet | 10–12 | 4,193 | 100.0% | 2.655 | 2.772 | -2.655 | 3.736 |
-| ZED SDK | 12–14 | 2,398 | 64.8% | 6.989 | 13.345 | +6.389 | 23.824 |
-| DepthNet | 12–14 | 2,398 | 100.0% | 4.198 | 4.287 | -4.198 | 5.276 |
-| ZED SDK | 14–16 | 2,065 | 60.0% | 9.057 | 17.914 | +8.212 | 41.455 |
-| DepthNet | 14–16 | 2,065 | 100.0% | 5.915 | 5.985 | -5.915 | 7.137 |
-| ZED SDK | 16–18 | 1,702 | 60.5% | 5.364 | 11.746 | +4.068 | 6.902 |
-| DepthNet | 16–18 | 1,702 | 100.0% | 7.898 | 7.944 | -7.898 | 9.125 |
-| ZED SDK | 18–20 | 1,053 | 58.1% | 4.454 | 8.876 | +2.391 | 6.154 |
-| DepthNet | 18–20 | 1,053 | 100.0% | 9.842 | 9.873 | -9.842 | 10.906 |
+| ZED SDK | 0–2 | 106,839 | 95.5% | 2.803 | 6.030 | +2.803 | 2.991 |
+| DepthNet | 0–2 | 106,839 | 100.0% | 2.472 | 2.492 | +2.472 | 2.811 |
+| ZED SDK | 2–4 | 84,986 | 95.6% | 2.016 | 5.580 | +2.014 | 2.221 |
+| DepthNet | 2–4 | 84,986 | 100.0% | 2.187 | 2.229 | +2.187 | 2.630 |
+| ZED SDK | 4–6 | 28,291 | 97.2% | 3.556 | 9.791 | +3.424 | 13.935 |
+| DepthNet | 4–6 | 28,291 | 100.0% | 1.917 | 2.088 | +1.902 | 3.290 |
+| ZED SDK | 6–8 | 12,072 | 82.1% | 9.540 | 18.955 | +9.230 | 36.772 |
+| DepthNet | 6–8 | 12,072 | 100.0% | 0.937 | 1.159 | +0.784 | 2.005 |
+| ZED SDK | 8–10 | 5,969 | 69.9% | 6.992 | 14.544 | +6.654 | 10.660 |
+| DepthNet | 8–10 | 5,969 | 100.0% | 0.841 | 1.019 | -0.667 | 1.608 |
+| ZED SDK | 10–12 | 4,324 | 72.2% | 4.993 | 10.974 | +4.416 | 8.061 |
+| DepthNet | 10–12 | 4,324 | 100.0% | 2.487 | 2.617 | -2.487 | 3.574 |
+| ZED SDK | 12–14 | 2,434 | 65.7% | 4.293 | 9.127 | +3.501 | 6.994 |
+| DepthNet | 12–14 | 2,434 | 100.0% | 4.040 | 4.134 | -4.040 | 5.104 |
+| ZED SDK | 14–16 | 2,104 | 61.2% | 3.189 | 4.513 | +2.038 | 5.980 |
+| DepthNet | 14–16 | 2,104 | 100.0% | 5.789 | 5.855 | -5.789 | 6.969 |
+| ZED SDK | 16–18 | 1,870 | 66.4% | 3.633 | 5.348 | +1.981 | 7.858 |
+| DepthNet | 16–18 | 1,870 | 100.0% | 7.699 | 7.744 | -7.699 | 8.899 |
+| ZED SDK | 18–20 | 1,200 | 66.2% | 4.662 | 7.346 | +2.189 | 9.216 |
+| DepthNet | 18–20 | 1,200 | 100.0% | 9.583 | 9.618 | -9.583 | 10.702 |
 
 ## 6. Thresholds (share of common pixels at or above)
 
 | Method | 0.5 m | 1 m | 2 m | 3 m | 5 m | 10 m | 20 m |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| ZED SDK | 87.0% | 74.3% | 27.0% | 9.7% | 6.7% | 4.8% | 2.9% |
-| DepthNet | 97.1% | 93.7% | 63.4% | 6.3% | 2.0% | 0.2% | 0.0% |
+| ZED SDK | 89.8% | 79.7% | 39.0% | 12.7% | 6.5% | 4.5% | 2.6% |
+| DepthNet | 97.3% | 94.1% | 71.8% | 6.7% | 2.0% | 0.1% | 0.0% |
 
 ---
 
@@ -214,20 +214,25 @@ R/B-corrected SDK left image, so DepthNet is evaluated fairly. The original
    `"H265, 16000 kbps (lossy)"`; the actual producer for this capture used
    H.264 / 3000 kbps / chunk 1200 / transport BOTH. The rest of the capture
    metadata (SDK 5.5.1, PERFORMANCE, K, baseline, timestamp) is accurate.
+7. **Run-to-run variation.** Two identical PERFORMANCE captures gave
+   251,213 px / MAE 2.800 m and 250,089 px / MAE 3.117 m. This report uses the
+   final capture (250,089 / 3.117). The variation comes from H.264/IDR/duplicate
+   frame timing and the skipped 1,216-byte metadata; it is not a deterministic
+   benchmark.
 
 ---
 
 ## 8. Bottom line
 
 A genuine ZED SDK 5.5.1 depth capture is now available for the UE pair:
-**251,213 valid pixels, 92.74% coverage, MAE
-2.800 m, RMSE 6.879 m, bias +2.725 m**.
+**250,089 valid pixels, 92.33% coverage, MAE
+3.117 m, RMSE 7.930 m, bias +3.026 m**.
 On the same corrected image, DepthNet has the lower MAE/RMSE
-(2.210 / 2.428 m) and full coverage, while the SDK
-has the lower median (1.631 m vs
-2.142 m), a heavier tail (P90
-2.910 m vs 2.706 m) and
-92.74% coverage. The clean-image DepthNet result is 2.530 m,
+(2.316 / 2.528 m) and full coverage, while the SDK
+has the lower median (1.815 m vs
+2.256 m), a heavier tail (P90
+3.287 m vs 2.850 m) and
+92.33% coverage. The clean-image DepthNet result is 2.530 m,
 the clean-image SGBM result is 0.791 m at 73.0% coverage; those are different
 inputs and are not ranked against the SDK.
 
@@ -243,5 +248,6 @@ to obtain a protocol-matched 5.5.1 runtime (the published 5.2.0 runtime sends
 - [Issue #63 — struct fields, chunk ≤1200, H.264 fallback](https://github.com/stereolabs/zed-isaac-sim/issues/63)
 - [Issue #61 — first-frame ENCODING_FAILED fixed in 5.3](https://github.com/stereolabs/zed-isaac-sim/issues/61)
 - [Pinned `build.bat` — `SL_ZED_VERSION=5.2.0` runtime URL](https://github.com/stereolabs/zed-isaac-sim/blob/f9160973f321ec743f626188244cd9702d85bec6/build.bat)
-- Local proof: `outputs/logs/sdk_h264_3000.log` (metadata mismatch and IDR),
-  `outputs/sdk_three_way/sdk_capture.json`, `comparison/summary.json`.
+- Local proof: `outputs/logs/final/sdk_performance_final.log` (metadata
+  mismatch/IDR), `outputs/logs/final/sdk_compare_corrected_final.log`,
+  `outputs/sdk_three_way/sdk_capture.json`, `comparison_corrected/summary.json`.
