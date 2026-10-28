@@ -41,7 +41,7 @@
     0.0
   ],
   "depth_unit": "metres",
-  "image_timestamp_ns": 2133333312,
+  "image_timestamp_ns": 2199999978,
   "input": "repeated static UE stereo pair; RGB only, no GT ingestion",
   "self_calibration": false,
   "depth_stabilization": 0,
@@ -93,5 +93,7 @@
     "truth_resampling": "nearest depth, inverse rotated rays, corrected optical Z",
     "both_eye_image_coverage_fraction": 1.0
   },
-  "stream_codec": "H265, 16000 kbps (lossy)"
+  "stream_codec": "H264, 3000 kbps, chunk 1200, transport BOTH (lossy)",
+  "sim_runtime": "sl_zed64.dll 5.5.1 (5.2.0-labelled)",
+  "metadata_note": "producer metadata 1216 bytes; 5.5.1 consumer expects 2904; camera settings skipped"
 }

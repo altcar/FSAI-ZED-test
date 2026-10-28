@@ -11,14 +11,17 @@ exact failure causes are in `RUN_SUMMARY.md`,
 - Git repo is initialized in this folder.
   - `e6c1af8` — original ZIP import.
   - `ab18af9` — validated state before the final rerun.
-  - HEAD — final rerun + notebook + summary + these notes.
+  - `939bc4e` — final rerun + notebook + summary + these notes.
+  - HEAD — fixed `00`/`03`/`04` entry points and the fixed rerun.
 - **Dependencies were removed after the final commit**:
   `C:\FSAI_3070_venv`, the `.venv` junction, `L:\...\ZED_SDK_extract`,
-  `zed_runtime\sl_zed64.dll`, downloaded wheels, and `C:\Users\V9\innoextract`.
-  There is no runnable venv/SDK in the workspace. This is intentional.
+  `zed_runtime\sl_zed64.dll`, downloaded wheels/installer, and
+  `C:\Users\V9\innoextract`. There is no runnable venv/SDK in the workspace.
+  This is intentional; the fixed `00` rebuilds the venv.
 - Results/figures/logs/reports remain in `outputs/` and the Markdown files.
-- `scripts/verify_manifest.py` checks the original 461 files; the new reports,
-  analysis scripts, notebook and outputs are not in the original manifest.
+- `scripts/verify_manifest.py` checks 461 files. The fixed `00`, `03`, `04`
+  hashes were updated in `MANIFEST_SHA256.json`; the original copies are in
+  `analysis/original_cmd/`.
 
 ## Do-not-repeat list (already diagnosed and fixed)
 
@@ -32,10 +35,12 @@ exact failure causes are in `RUN_SUMMARY.md`,
    5.5.1 consumer expects **2,904** and skips it:
    `Incorrect metadata size. Expecting: 2904 got 1216. Skipping.`
    K and baseline still pass. Do not download another "5.5.1 runtime".
-3. **Stock producer fails.** Stock `04_run_zed_three_way_EXPERIMENTAL.cmd`
-   (RGB/RGBA, `chunk_size=4096`, strict first-frame handling) fails with
-   `ENCODING_FAILED` / metadata timeout / `int(ERROR_CODE)` TypeError. This is
-   expected. Use the fixed experimental producer, not stock 04.
+3. **Stock original 04 fails; the current fixed 04 passes.** The original
+   `04_run_zed_three_way_EXPERIMENTAL.cmd` (preserved in
+   `analysis/original_cmd/`) used the stock RGB/`chunk_size=4096` producer and
+   fails with `ENCODING_FAILED` / metadata timeout / `int(ERROR_CODE)`
+   TypeError. The current `04` uses `scripts/run_sdk_fixed.py` and
+   `scripts/sim_streamer_fixed.py`; it passes. Do not restore the stock 04.
 4. **The fix is known.** Use:
    - `chunk_size = 1200`;
    - extended `StreamingParameters` fields after `chunk_size`:
@@ -45,7 +50,8 @@ exact failure causes are in `RUN_SUMMARY.md`,
    - H.264, 3000 kbps, transport BOTH (2), frame-relative timestamps;
    - tolerate the first `ENCODING_FAILED` for the first 10 frames (issue #61);
    - depth mode **PERFORMANCE**.
-   The working files are preserved as
+   The canonical fixed files are `scripts/sim_streamer_fixed.py` and
+   `scripts/run_sdk_fixed.py`; copies of the development versions remain in
    `analysis/sim_streamer_success_experimental.py` and
    `analysis/run_sdk_success_experimental.py`.
 5. **NEURAL is not available yet.** The extracted SDK's TensorRT DLLs
@@ -61,7 +67,7 @@ exact failure causes are in `RUN_SUMMARY.md`,
    itself is unchanged.
 7. **Run-to-run variation.** Two identical PERFORMANCE captures gave SDK MAE
    2.800 m and 3.117 m (coverage 92.74% and 92.33%). This is H.264/IDR/duplicate
-   timing, not a deterministic benchmark. The final report uses 3.117 m.
+   timing, not a deterministic benchmark. The final fixed-04 report uses 2.800 m.
 
 ## Expected values (do not re-litigate)
 
@@ -73,53 +79,47 @@ exact failure causes are in `RUN_SUMMARY.md`,
 | Mono GPU | 419,524 px; MAE 2.610419 m; RMSE 2.745033 m |
 | Stereo DepthNet clean | MAE 2.530 m; RMSE 2.718 m; 100% |
 | Stereo SGBM clean | MAE 0.791 m; RMSE 4.301 m; 73.0% |
-| SDK PERFORMANCE (final) | 250,089 px; 92.33%; MAE 3.117 m; RMSE 7.930 m |
-| DepthNet on corrected SDK image | 270,876 px; 100%; MAE 2.312 m; RMSE 2.548 m |
-| Common pixels | 250,089 |
+| SDK PERFORMANCE (final) | 251,213 px; 92.74%; MAE 2.800 m; RMSE 6.879 m |
+| DepthNet on corrected SDK image | 270,876 px; 100%; MAE 2.211 m; RMSE 2.464 m |
+| Common pixels | 251,213 |
 
 ## If a rerun is required
 
-You must rebuild the removed dependencies first. Do not expect `00_setup` to
-work: this PC has **no `py -3.11`** launcher entry, so `00_setup_windows.cmd`
-fails. Use uv:
+The dependencies were removed after the final commit. The fixed
+`00_setup_windows.cmd` now rebuilds the venv even though this PC has no
+`py -3.11` launcher entry: it uses `uv` (or `py -3.11` as fallback), creates
+`C:\FSAI_3070_venv`, junctions `.venv`, installs CUDA PyTorch and requirements.
 
-```powershell
-uv venv C:\FSAI_3070_venv --python 3.11
-uv pip install --python C:\FSAI_3070_venv\Scripts\python.exe torch torchvision `
-  --index-url https://download.pytorch.org/whl/cu128
-uv pip install --python C:\FSAI_3070_venv\Scripts\python.exe -r requirements.txt
-# link it as .venv (or run C:\FSAI_3070_venv directly)
-```
-
-Then restore the SDK/runtime assets:
-
-- SDK 5.5.1: extract the official installer to
-  `L:\save\userdata\Downloads\ZED_SDK_extract` (the official installer was
-  removed after the run).
-- `pyzed` wheel: `pyzed-5.5-cp311-cp311-win_amd64.whl` into the venv; copy
-  `sl_zed64.dll` and `sl_ai64.dll` from the SDK `bin` into
-  `site-packages/pyzed`.
-- Sim runtime: download the 5.2.0 archive from the URL in
-  `scripts/download_sim_runtime.py` and extract `sl_zed64.dll` into
-  `zed_runtime/`.
-- Run the fixed producer:
-  ```powershell
-  Copy-Item analysis\sim_streamer_success_experimental.py scripts\sim_streamer.py -Force
-  Copy-Item analysis\run_sdk_success_experimental.py scripts\run_sdk.py -Force
-  $env:ZED_SDK_ROOT_DIR = 'L:\save\userdata\Downloads\ZED_SDK_extract\app'
-  .venv\Scripts\python.exe analysis\run_sdk_with_root.py `
-    --dll zed_runtime\sl_zed64.dll --output outputs\sdk_three_way --depth-mode PERFORMANCE
-  .venv\Scripts\python.exe analysis\fix_sdk_left.py
-  .venv\Scripts\python.exe scripts\compare.py `
-    --image outputs\sdk_three_way\sdk_left_corrected.png `
-    --gt outputs\sdk_three_way\ue_z_m.npy `
-    --sdk-depth outputs\sdk_three_way\sdk_z_m.npy `
-    --device 0 --output outputs\sdk_three_way\comparison_corrected
-  .venv\Scripts\python.exe analysis\build_sdk_success_report.py
-  # restore the canonical kit scripts afterwards
-  Copy-Item analysis\sim_streamer_original.py scripts\sim_streamer.py -Force
-  Copy-Item analysis\run_sdk_original.py scripts\run_sdk.py -Force
-  ```
+1. Restore the SDK/runtime assets:
+   - SDK 5.5.1: extract the official installer to
+     `L:\save\userdata\Downloads\ZED_SDK_extract` (installer was removed after
+     the run). `get_python_api.py`, `include/sl/Camera.hpp`,
+     `bin/sl_zed64.dll`, `bin/sl_ai64.dll` are required.
+   - Sim runtime: download the 5.2.0 archive from the URL in
+     `scripts/download_sim_runtime.py`; extract **twice** (the `.tar.gz`
+     contains a `.tar`) and keep `zed_runtime/sl_zed64.dll`.
+2. Run:
+   ```powershell
+   .\00_setup_windows.cmd
+   $env:ZED_SDK_ROOT_DIR = 'L:\save\userdata\Downloads\ZED_SDK_extract\app'
+   .\03_install_zed_python.cmd
+   .\03b_download_sim_runtime_IF_NEEDED.cmd   # only if the DLL is absent
+   .\04_run_zed_three_way_EXPERIMENTAL.cmd
+   .\05_collect_results.cmd
+   ```
+   The fixed `04` runs `scripts/run_sdk_fixed.py` +
+   `scripts/sim_streamer_fixed.py`, fixes the saved left image's R/B swap,
+   compares on the corrected image, and rebuilds the SDK report. Do not copy
+   the experimental files over the canonical scripts; the fixed scripts are
+   already the canonical files.
+3. Rebuild the stereo/SDK Markdown and notebook if needed:
+   ```powershell
+   .venv\Scripts\python.exe analysis\build_report.py
+   .venv\Scripts\python.exe analysis\build_sdk_success_report.py
+   uv pip install --python .venv\Scripts\python.exe nbformat nbclient ipykernel
+   .venv\Scripts\python.exe -m ipykernel install --user --name fsai --display-name "FSAI Results"
+   .venv\Scripts\python.exe analysis\make_notebook.py
+   ```
 
 If the SDK open reports metadata 1216 vs 2904, that is expected for the
 5.2.0-labelled runtime; it does not invalidate the depth as long as K/baseline
@@ -128,10 +128,13 @@ pass and the capture has valid pixels. Do not remove the version guard.
 ## What not to do
 
 - Do not retry driver/NVENC/disk-space diagnosis; it is solved (621.01).
-- Do not use the stock `04` bridge as-is; it fails by design.
+- Do not run the stock original `04` from `analysis/original_cmd/`; use the
+  current fixed `04`.
 - Do not use `sdk_left.png` (R/B swapped) for DepthNet; use the corrected file.
 - Do not call PERFORMANCE "NEURAL"; the report labels it.
 - Do not commit `.venv`, SDK trees, runtime DLLs, wheels, `.npy` arrays, or
   bridge temp dirs; `.gitignore` excludes them.
 - Do not report the invalid 9.34 m DepthNet or the 0-valid-pixel capture as the
   result; those were intermediate failures.
+- Do not re-add the old `00`/`03`/`04` content from the ZIP; the fixed commands
+  and updated manifest are intentional.

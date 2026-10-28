@@ -1,10 +1,10 @@
 {
-  "00_setup_windows.cmd": "62b5578a373578821ff24f22fa79e1f037c538bc2ae3f1b21683b88e52af3c2f",
+  "00_setup_windows.cmd": "89aec7018aec46dd926913528bd5fcc155b91d287c651657199d2925cc08aaf6",
   "01_verify_and_replay.cmd": "371768b688aebafda2d7ba1fcdc7e87825b71f7c690df2008bc2b663195dfbb7",
   "02_run_depthnet.cmd": "6440549f858a6f39f7065754ae5eae647449c72b0a242cb1e03f3ef3f87daad0",
-  "03_install_zed_python.cmd": "252924b3f983fdfe0c7ddccde921bf03e646cc6ae3f28222c3a7c225302aa546",
+  "03_install_zed_python.cmd": "a48c53afc47850614b7cb7dd7b37a035bfe5d54045de9e873e439a87b2c26e1b",
   "03b_download_sim_runtime_IF_NEEDED.cmd": "ff60f2cd2f8bfe342e3ad042a072e5af6a212897edaae430861505b1555c573d",
-  "04_run_zed_three_way_EXPERIMENTAL.cmd": "9941d0020b4c7ede437eafeba613fc70bccc268dfe153bc8fdf7599abda24b38",
+  "04_run_zed_three_way_EXPERIMENTAL.cmd": "a7e56f10b7ff098c860def5a7e786eff85f513b05d67054c1c978bd5432f5402",
   "05_collect_results.cmd": "75c4491b848b244f15b28da42e7da3116a2ad0c07d532e745916fc0157b6b311",
   "PROVENANCE.json": "6180325fd67ec54b9896ba0542059dd00d48ab15adadafe6001732a3f0a96726",
   "README.md": "08bbe2c0a9766ec1518f4139a513d84053bb3547d933f439dd0c4cd47db991e9",

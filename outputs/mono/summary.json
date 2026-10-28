@@ -31,9 +31,9 @@
     "ultralytics": "8.4.189",
     "imgsz": 768,
     "speed_ms": {
-      "preprocess": 41.62519999954384,
-      "inference": 13.952199999039294,
-      "postprocess": 0.18500000078347512
+      "preprocess": 60.57879999934812,
+      "inference": 14.72239999930025,
+      "postprocess": 0.1740000006975606
     }
   },
   "image_sha256": "6f7aa9b40046f1212cfedad9369f0ccd189570ab7b44ff6dedde166c10e3fadf",

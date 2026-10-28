@@ -6,9 +6,11 @@ if not defined FSAI_ZED_DIR set "FSAI_ZED_DIR=C:\Program Files (x86)\ZED SDK"
 if not exist "%FSAI_ZED_DIR%\get_python_api.py" goto missing
 ".venv\Scripts\python.exe" "%FSAI_ZED_DIR%\get_python_api.py"
 if errorlevel 1 goto fail
+".venv\Scripts\python.exe" -m pip install "numpy==2.2.6"
+if errorlevel 1 goto fail
 ".venv\Scripts\python.exe" scripts\check_environment.py
 if errorlevel 1 goto fail
-echo Python API installed. Read ZED_README.md before the experimental bridge.
+echo Python API installed. Run 04_run_zed_three_way_EXPERIMENTAL.cmd.
 pause
 exit /b 0
 :missing
