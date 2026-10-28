@@ -1,0 +1,41 @@
+{
+  "depth_definition": "optical_z_metres",
+  "gt_min_exclusive_m": 0,
+  "gt_max_inclusive_m": 20,
+  "target_pixels": 270876,
+  "posthoc_scale_fit": false,
+  "pairwise": {
+    "DepthNet": {
+      "pixels": 270876,
+      "mae_m": 2.441944864230724,
+      "rmse_m": 2.671908257003355,
+      "bias_m": 1.8088288417933698,
+      "abs_rel": 1.0854856488531084,
+      "coverage_of_gt": 1.0
+    }
+  },
+  "common_pixels": 270876,
+  "common_pixel_metrics": {
+    "DepthNet": {
+      "pixels": 270876,
+      "mae_m": 2.441944864230724,
+      "rmse_m": 2.671908257003355,
+      "bias_m": 1.8088288417933698,
+      "abs_rel": 1.0854856488531084
+    }
+  },
+  "three_way_complete": false,
+  "inference": {
+    "device": "cpu",
+    "torch": "2.14.1",
+    "ultralytics": "8.4.189",
+    "imgsz": 768,
+    "speed_ms": {
+      "preprocess": 1.5054999967105687,
+      "inference": 139.1710420139134,
+      "postprocess": 0.5458749947138131
+    }
+  },
+  "image_sha256": "07d972bfb39bb33fafdd18251510c53ccb032a13fb5516369e4140b740ab8699",
+  "gt_sha256": "b062f0c938bff6e3b384468b77da1dd8542ef3efaa5f6e05c196b79700a39a1a"
+}

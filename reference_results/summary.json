@@ -1,0 +1,49 @@
+{
+  "comparison": "FSAI-Seg single-image monocular depth vs UE ground truth",
+  "three_way_complete": false,
+  "zed_sdk_depth": null,
+  "pending": "Same-image ZED SDK depth array is not available; no substitute stereo algorithm was used.",
+  "image": "/Users/huangyicheng/FSAI-Seg/image_pinhole.png",
+  "ground_truth": "/Users/huangyicheng/FSAI-Seg/depth_z_pinhole_m.npy",
+  "matching_ue_shot": "/Users/huangyicheng/Documents/Unreal Projects/FSAI/Saved/FSAI_Snapshots/20261027T013954_940944Z/000005",
+  "image_and_gt_exact_match_to_shot": true,
+  "image_sha256": "6f7aa9b40046f1212cfedad9369f0ccd189570ab7b44ff6dedde166c10e3fadf",
+  "gt_sha256": "a1730db26a2c326285fabff7b14704a25ca80a6b13f0009a91d5a693da0ffe25",
+  "model": "/Users/huangyicheng/FSAI-Seg/yolo26s-depth.pt",
+  "model_sha256": "0ab8fa24504a5efa8dd8dd46870c25146ebd22508c64f5e29656e17c59bc24dd",
+  "inference": {
+    "device": "cpu",
+    "imgsz": 768,
+    "original_image_shape": [
+      720,
+      1280
+    ],
+    "prediction_shape": [
+      720,
+      1280
+    ],
+    "preprocessing": "FSAI-Seg installed Ultralytics DepthPredictor scale_fill, restored to original image size",
+    "posthoc_gt_scale_fit": false,
+    "output_interpretation": "model native output, treated as metric Z by the repository script"
+  },
+  "protocol": {
+    "alignment": "same source image and paired UE depth, no extra geometric registration",
+    "max_ground_truth_m": 20,
+    "invalid_excluded": true
+  },
+  "all_valid_pixels": {
+    "target_pixels": 419524,
+    "evaluated_pixels": 419524,
+    "prediction_valid_fraction": 1.0,
+    "mae_m": 2.6131932735443115,
+    "rmse_m": 2.7477118968963623,
+    "bias_m": 2.1907811164855957
+  },
+  "cone_regions": {
+    "count": 11,
+    "pixels": 5903,
+    "mae_m": 1.4229899607491496,
+    "rmse_m": 1.7813511088142038,
+    "method": "FSAI-Seg cone_depth_comparison.py scene-specific planar-ground extraction; C1..C11 are local comparison IDs"
+  }
+}

@@ -1,0 +1,3623 @@
+{
+  "schema_version": 1,
+  "image": "image.png",
+  "width": 1280,
+  "height": 720,
+  "image_model": "Brown-Conrady raw camera, factory calibration; not SDK rectified image",
+  "camera": "ZED SN2448592 left eye",
+  "simulation_time_s": 28.08393145352602,
+  "intrinsics_K": [
+    [
+      699.12,
+      0,
+      653.93
+    ],
+    [
+      0,
+      699.13,
+      368.2255
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "distortion_D": [
+    -0.173345,
+    0.0269476,
+    0.000231498,
+    -2.45302e-05,
+    -1.36885e-10
+  ],
+  "synchronization": "RGB, Z, instance pass, geometry in one game-thread callback; no world tick between passes",
+  "camera_pose": {
+    "location_ue_cm": [
+      4530.262714886143,
+      -1674.120829303663,
+      407.09514522658515
+    ],
+    "rotation_ue_deg": [
+      0.2831517496547976,
+      81.68677845292069,
+      -0.0014776186819176647
+    ]
+  },
+  "pawn_pose": {
+    "location_ue_cm": [
+      4519.6600108984985,
+      -1705.2831911305175,
+      367.31192160252067
+    ],
+    "rotation_ue_deg": [
+      0.2831517496547976,
+      81.68677845292069,
+      -0.0014776186819176647
+    ]
+  },
+  "coordinate_axes": {
+    "camera_optical_m": "X right, Y down, Z forward",
+    "vehicle_flu_m": "X forward, Y left, Z up",
+    "world_ue_m": "Unreal world X/Y/Z, metres"
+  },
+  "position_reference": "cone mesh world AABB bottom centre (upright cones)",
+  "visibility": "at least 1 raster pixel in depth-tested instance pass, warped with the same lens map as RGB",
+  "bbox_convention": "visible pixels only; xyxy right/bottom exclusive; can be clipped/partially occluded",
+  "instance_mask": "instances.png, uint16 PNG; 0 background, other values are instance_id",
+  "depth": "depth_z_m.npy, float32 optical Z metres; NaN invalid",
+  "ego_vehicle_hidden": true,
+  "cones": [
+    {
+      "instance_id": 37,
+      "id": "FSAI_Blue_037",
+      "color": "blue",
+      "base_world_ue_m": [
+        47.58073872916575,
+        -13.51279997444749,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        47.58073871276255,
+        -13.51279997444749,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        -1.7874114491630457,
+        0.5881331559356492,
+        3.521001641629531
+      ],
+      "centre_camera_optical_m": [
+        -1.787407269399095,
+        0.42605965444485805,
+        3.5218026041005124
+      ],
+      "base_vehicle_flu_m": [
+        3.846642828898655,
+        1.8472582288828863,
+        -0.19190382719900267
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 1932,
+      "visible_bbox_xyxy": [
+        278,
+        419,
+        353,
+        485
+      ],
+      "visible_centroid_uv": [
+        315.1123188405797,
+        461.13923395445136
+      ],
+      "base_uv": [
+        315.7758667388657,
+        479.5385627396287
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 3.9922666316351942
+    },
+    {
+      "instance_id": 38,
+      "id": "FSAI_Blue_038",
+      "color": "blue",
+      "base_world_ue_m": [
+        47.08645594209072,
+        -10.260350564214606,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        47.086455925687524,
+        -10.260350564214606,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        -0.8280688632450409,
+        0.6037091416942111,
+        6.667771704922158
+      ],
+      "centre_camera_optical_m": [
+        -0.8280646834810904,
+        0.4416356402034199,
+        6.668572667393139
+      ],
+      "base_vehicle_flu_m": [
+        6.99341289219128,
+        0.8879156429648799,
+        -0.20747981295756454
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 532,
+      "visible_bbox_xyxy": [
+        550,
+        398,
+        585,
+        433
+      ],
+      "visible_centroid_uv": [
+        567.2781954887218,
+        420.15225563909775
+      ],
+      "base_uv": [
+        567.4560903416178,
+        431.2743114483984
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 6.74606124186563
+    },
+    {
+      "instance_id": 39,
+      "id": "FSAI_Blue_039",
+      "color": "blue",
+      "base_world_ue_m": [
+        45.98848919128448,
+        -6.943379965451925,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        45.98848917488128,
+        -6.943379965451925,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        0.7379432167954576,
+        0.6191849339790404,
+        9.791101915443049
+      ],
+      "centre_camera_optical_m": [
+        0.737947396559407,
+        0.45711143248824926,
+        9.791902877914032
+      ],
+      "base_vehicle_flu_m": [
+        10.116743102712173,
+        -0.678096437075617,
+        -0.2229556052423939
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 245,
+      "visible_bbox_xyxy": [
+        696,
+        390,
+        718,
+        414
+      ],
+      "visible_centroid_uv": [
+        706.6612244897959,
+        404.62448979591835
+      ],
+      "base_uv": [
+        706.5347099897789,
+        412.366794226393
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 9.838375216074736
+    },
+    {
+      "instance_id": 40,
+      "id": "FSAI_Blue_040",
+      "color": "blue",
+      "base_world_ue_m": [
+        43.943887465038294,
+        -4.0060960957985525,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        43.943887448635095,
+        -4.0060960957985525,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        3.1857466931214957,
+        0.632150412237054,
+        12.401872450659512
+      ],
+      "centre_camera_optical_m": [
+        3.1857508728854462,
+        0.4700769107462629,
+        12.402673413130492
+      ],
+      "base_vehicle_flu_m": [
+        12.727513637928638,
+        -3.125899913401654,
+        -0.2359210835004076
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 155,
+      "visible_bbox_xyxy": [
+        823,
+        386,
+        841,
+        405
+      ],
+      "visible_centroid_uv": [
+        831.5548387096774,
+        397.5870967741935
+      ],
+      "base_uv": [
+        831.4058519537082,
+        403.45402067317053
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 12.820102824035907
+    },
+    {
+      "instance_id": 41,
+      "id": "FSAI_Blue_041",
+      "color": "blue",
+      "base_world_ue_m": [
+        41.349286286208724,
+        -1.741581914595205,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        41.349286269805525,
+        -1.741581914595205,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        6.080498475044622,
+        0.641444597048939,
+        14.267430140262395
+      ],
+      "centre_camera_optical_m": [
+        6.08050265480857,
+        0.4793710955581478,
+        14.268231102733376
+      ],
+      "base_vehicle_flu_m": [
+        14.593071327531517,
+        -6.02065169532478,
+        -0.24521526831229248
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 102,
+      "visible_bbox_xyxy": [
+        935,
+        384,
+        952,
+        399
+      ],
+      "visible_centroid_uv": [
+        942.5686274509804,
+        392.9117647058824
+      ],
+      "base_uv": [
+        942.6635655962234,
+        398.7151035878612
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 15.522354063845182
+    },
+    {
+      "instance_id": 42,
+      "id": "FSAI_Blue_042",
+      "color": "blue",
+      "base_world_ue_m": [
+        38.50345403017751,
+        -0.009733641365477013,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        38.503454013774316,
+        -0.009733641365477013,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        9.14682632800358,
+        0.6479589689547138,
+        15.569601685061041
+      ],
+      "centre_camera_optical_m": [
+        9.146830507767529,
+        0.4858854674639227,
+        15.570402647532022
+      ],
+      "base_vehicle_flu_m": [
+        15.895242872330163,
+        -9.08697954828374,
+        -0.2517296402180674
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 84,
+      "visible_bbox_xyxy": [
+        1034,
+        382,
+        1050,
+        396
+      ],
+      "visible_centroid_uv": [
+        1041.25,
+        390.6666666666667
+      ],
+      "base_uv": [
+        1041.2752461956304,
+        395.721896661373
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 18.069221879526634
+    },
+    {
+      "instance_id": 43,
+      "id": "FSAI_Blue_043",
+      "color": "blue",
+      "base_world_ue_m": [
+        35.450554245830645,
+        1.2899354464236763,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        35.450554229427446,
+        1.2899354464236763,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        12.355559566802484,
+        0.6522157099183327,
+        16.414202012673627
+      ],
+      "centre_camera_optical_m": [
+        12.355563746566434,
+        0.4901422084275415,
+        16.41500297514461
+      ],
+      "base_vehicle_flu_m": [
+        16.73984319994275,
+        -12.295712787082644,
+        -0.25598638118168615
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 76,
+      "visible_bbox_xyxy": [
+        1126,
+        382,
+        1139,
+        395
+      ],
+      "visible_centroid_uv": [
+        1132.75,
+        389.75
+      ],
+      "base_uv": [
+        1132.9093429272873,
+        393.60232664741835
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 20.555078818966557
+    },
+    {
+      "instance_id": 44,
+      "id": "FSAI_Blue_044",
+      "color": "blue",
+      "base_world_ue_m": [
+        32.09039903152981,
+        2.119199228345282,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        32.090399015126614,
+        2.119199228345282,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        15.800306464420215,
+        0.6539587223185193,
+        16.748921682637583
+      ],
+      "centre_camera_optical_m": [
+        15.800310644184165,
+        0.49188522082772806,
+        16.749722645108566
+      ],
+      "base_vehicle_flu_m": [
+        17.07456286990671,
+        -15.740459684700374,
+        -0.2577293935818727
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 40,
+      "visible_bbox_xyxy": [
+        1219,
+        380,
+        1230,
+        393
+      ],
+      "visible_centroid_uv": [
+        1226.175,
+        386.35
+      ],
+      "base_uv": [
+        1225.6275890748132,
+        392.0327367759541
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 23.034837180045862
+    },
+    {
+      "instance_id": 71,
+      "id": "FSAI_Blue_071",
+      "color": "blue",
+      "base_world_ue_m": [
+        14.095234400930883,
+        22.978974594311218,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        14.095234384527686,
+        22.978974594311218,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        36.6223847364423,
+        0.74364167928397,
+        34.78746906877523
+      ],
+      "centre_camera_optical_m": [
+        36.622388916206255,
+        0.5815681777931789,
+        34.788270031246206
+      ],
+      "base_vehicle_flu_m": [
+        35.11311025604435,
+        -36.562537956722466,
+        -0.34741235054732356
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 18,
+      "visible_bbox_xyxy": [
+        1270,
+        376,
+        1277,
+        382
+      ],
+      "visible_centroid_uv": [
+        1272.888888888889,
+        379.44444444444446
+      ],
+      "base_uv": [
+        1272.8037913996714,
+        380.97215159006146
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 50.5165326496402
+    },
+    {
+      "instance_id": 72,
+      "id": "FSAI_Blue_072",
+      "color": "blue",
+      "base_world_ue_m": [
+        16.727175118752733,
+        22.82513002058297,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        16.727175102349538,
+        22.82513002058297,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        33.99585568917607,
+        0.7447022298970006,
+        35.015776173555864
+      ],
+      "centre_camera_optical_m": [
+        33.99585986894002,
+        0.5826287284062095,
+        35.01657713602685
+      ],
+      "base_vehicle_flu_m": [
+        35.341417360824984,
+        -33.93600890945623,
+        -0.34847290116035423
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 17,
+      "visible_bbox_xyxy": [
+        1235,
+        376,
+        1242,
+        382
+      ],
+      "visible_centroid_uv": [
+        1238.0588235294117,
+        379.5882352941176
+      ],
+      "base_uv": [
+        1237.9534440066868,
+        381.1720954484963
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 48.80960321993061
+    },
+    {
+      "instance_id": 73,
+      "id": "FSAI_Blue_073",
+      "color": "blue",
+      "base_world_ue_m": [
+        19.536150590055485,
+        22.379293345933153,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        19.53615057365229,
+        22.379293345933153,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        31.151934579885335,
+        0.744455833303189,
+        34.98075900258819
+      ],
+      "centre_camera_optical_m": [
+        31.151938759649283,
+        0.5823823318123978,
+        34.98155996505917
+      ],
+      "base_vehicle_flu_m": [
+        35.306400189857314,
+        -31.09208780016549,
+        -0.34822650456654247
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 16,
+      "visible_bbox_xyxy": [
+        1199,
+        376,
+        1205,
+        382
+      ],
+      "visible_centroid_uv": [
+        1201.5,
+        379.125
+      ],
+      "base_uv": [
+        1201.4171419378654,
+        381.4380593411724
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 46.84709962158116
+    },
+    {
+      "instance_id": 74,
+      "id": "FSAI_Blue_074",
+      "color": "blue",
+      "base_world_ue_m": [
+        22.503047164227077,
+        21.84462129597793,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        22.50304714782388,
+        21.84462129597793,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        28.138907517933017,
+        0.7438835105110816,
+        34.88067364289899
+      ],
+      "centre_camera_optical_m": [
+        28.13891169769697,
+        0.5818100090202905,
+        34.88147460536997
+      ],
+      "base_vehicle_flu_m": [
+        35.20631483016811,
+        -28.07906073821318,
+        -0.3476541817744351
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 20,
+      "visible_bbox_xyxy": [
+        1158,
+        376,
+        1164,
+        383
+      ],
+      "visible_centroid_uv": [
+        1160.45,
+        380.0
+      ],
+      "base_uv": [
+        1160.671765011865,
+        381.7276756159388
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 44.82201326092377
+    },
+    {
+      "instance_id": 75,
+      "id": "FSAI_Blue_075",
+      "color": "blue",
+      "base_world_ue_m": [
+        25.681706350273977,
+        21.43917251855664,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        25.68170633387078,
+        21.43917251855664,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        24.935026617331147,
+        0.7440894747433519,
+        34.93906940036469
+      ],
+      "centre_camera_optical_m": [
+        24.935030797095095,
+        0.5820159732525607,
+        34.93987036283567
+      ],
+      "base_vehicle_flu_m": [
+        35.26471058763381,
+        -24.875179837611306,
+        -0.34786014600670534
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 20,
+      "visible_bbox_xyxy": [
+        1109,
+        376,
+        1116,
+        383
+      ],
+      "visible_centroid_uv": [
+        1112.2,
+        380.25
+      ],
+      "base_uv": [
+        1112.2545054665693,
+        381.9853861919813
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 42.93073248987183
+    },
+    {
+      "instance_id": 76,
+      "id": "FSAI_Blue_076",
+      "color": "blue",
+      "base_world_ue_m": [
+        29.114812531444674,
+        21.51762436608312,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        29.11481251504148,
+        21.51762436608312,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        21.54933681928214,
+        0.7468388244370691,
+        35.513063978767576
+      ],
+      "centre_camera_optical_m": [
+        21.54934099904609,
+        0.5847653229462779,
+        35.513864941238566
+      ],
+      "base_vehicle_flu_m": [
+        35.83870516603671,
+        -21.489490039562305,
+        -0.3506094957004226
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 11,
+      "visible_bbox_xyxy": [
+        1051,
+        378,
+        1055,
+        382
+      ],
+      "visible_centroid_uv": [
+        1052.6363636363637,
+        379.8181818181818
+      ],
+      "base_uv": [
+        1052.5854887898424,
+        382.1018487666039
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 41.546472759316096
+    },
+    {
+      "instance_id": 77,
+      "id": "FSAI_Blue_077",
+      "color": "blue",
+      "base_world_ue_m": [
+        32.42053398861128,
+        22.447499959717753,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        32.420533972208084,
+        22.447499959717753,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        18.41279584930641,
+        0.7536670275946178,
+        36.911108002149696
+      ],
+      "centre_camera_optical_m": [
+        18.412800029070358,
+        0.5915935261038265,
+        36.91190896462068
+      ],
+      "base_vehicle_flu_m": [
+        37.23674918941882,
+        -18.352949069586575,
+        -0.3574376988579712
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 9,
+      "visible_bbox_xyxy": [
+        986,
+        378,
+        991,
+        382
+      ],
+      "visible_centroid_uv": [
+        988.1111111111111,
+        380.22222222222223
+      ],
+      "base_uv": [
+        988.1857436921326,
+        381.94786835249334
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 41.25565366011158
+    },
+    {
+      "instance_id": 78,
+      "id": "FSAI_Blue_078",
+      "color": "blue",
+      "base_world_ue_m": [
+        35.394126384670955,
+        23.79496279102433,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        35.394126368267756,
+        23.79496279102433,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        15.665270689960908,
+        0.7623099435046052,
+        38.674326258187406
+      ],
+      "centre_camera_optical_m": [
+        15.665274869724863,
+        0.600236442013814,
+        38.67512722065839
+      ],
+      "base_vehicle_flu_m": [
+        38.999967445456534,
+        -15.605423910241067,
+        -0.36608061476795867
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 18,
+      "visible_bbox_xyxy": [
+        927,
+        377,
+        933,
+        383
+      ],
+      "visible_centroid_uv": [
+        929.2222222222222,
+        380.27777777777777
+      ],
+      "base_uv": [
+        929.24032025122,
+        381.64971186167315
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 41.73350373218666
+    },
+    {
+      "instance_id": 79,
+      "id": "FSAI_Blue_079",
+      "color": "blue",
+      "base_world_ue_m": [
+        38.17076358018384,
+        25.420399533728837,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        38.170763563780646,
+        25.420399533728837,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        13.152821913285084,
+        0.7721774803479411,
+        40.68411791314478
+      ],
+      "centre_camera_optical_m": [
+        13.152826093049029,
+        0.6101039788571501,
+        40.68491887561576
+      ],
+      "base_vehicle_flu_m": [
+        41.009759100413916,
+        -13.092975133565242,
+        -0.37594815161129475
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 13,
+      "visible_bbox_xyxy": [
+        875,
+        376,
+        878,
+        382
+      ],
+      "visible_centroid_uv": [
+        875.9230769230769,
+        379.15384615384613
+      ],
+      "base_uv": [
+        875.9039877077198,
+        381.27444219198355
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 42.76435937453544
+    },
+    {
+      "instance_id": 80,
+      "id": "FSAI_Blue_080",
+      "color": "blue",
+      "base_world_ue_m": [
+        40.793545021484746,
+        27.358880151416194,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        40.79354500508155,
+        27.358880151416194,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        10.837873511818202,
+        0.7834709561659736,
+        42.98141544501388
+      ],
+      "centre_camera_optical_m": [
+        10.837877691582152,
+        0.6213974546751826,
+        42.98221640748487
+      ],
+      "base_vehicle_flu_m": [
+        43.307056632283,
+        -10.778026732098365,
+        -0.3872416274293272
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 11,
+      "visible_bbox_xyxy": [
+        827,
+        376,
+        831,
+        382
+      ],
+      "visible_centroid_uv": [
+        828.2727272727273,
+        378.8181818181818
+      ],
+      "base_uv": [
+        828.279441426673,
+        380.83984217972255
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 44.33368248470009
+    },
+    {
+      "instance_id": 81,
+      "id": "FSAI_Blue_081",
+      "color": "blue",
+      "base_world_ue_m": [
+        43.23412691787501,
+        29.786207949608926,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        43.23412690147181,
+        29.786207949608926,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        8.773889870827484,
+        0.7970311726017464,
+        45.73607474937804
+      ],
+      "centre_camera_optical_m": [
+        8.773894050591435,
+        0.6349576711109551,
+        45.736875711849024
+      ],
+      "base_vehicle_flu_m": [
+        46.06171593664716,
+        -8.714043091107643,
+        -0.40080184386509976
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 12,
+      "visible_bbox_xyxy": [
+        785,
+        376,
+        790,
+        381
+      ],
+      "visible_centroid_uv": [
+        787.0833333333334,
+        378.8333333333333
+      ],
+      "base_uv": [
+        787.1888807891509,
+        380.3371403988369
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 46.57687125211615
+    },
+    {
+      "instance_id": 82,
+      "id": "FSAI_Blue_082",
+      "color": "blue",
+      "base_world_ue_m": [
+        45.09408348907456,
+        33.109953233704935,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        45.094083472671365,
+        33.109953233704935,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        7.414038613023158,
+        0.8145781436273734,
+        49.29377313748722
+      ],
+      "centre_camera_optical_m": [
+        7.4140427927871135,
+        0.6525046421365822,
+        49.29457409995821
+      ],
+      "base_vehicle_flu_m": [
+        49.61941432475635,
+        -7.354191833303321,
+        -0.41834881489072684
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 7,
+      "visible_bbox_xyxy": [
+        758,
+        376,
+        761,
+        380
+      ],
+      "visible_centroid_uv": [
+        759.1428571428571,
+        378.0
+      ],
+      "base_uv": [
+        758.6650741504195,
+        379.73662359826665
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 49.85486512104441
+    },
+    {
+      "instance_id": 83,
+      "id": "FSAI_Blue_083",
+      "color": "blue",
+      "base_world_ue_m": [
+        45.271783275197976,
+        36.95342027851149,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        45.27178325879478,
+        36.95342027851149,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        7.793911441357232,
+        0.8335093988990052,
+        53.1225006519977
+      ],
+      "centre_camera_optical_m": [
+        7.793915621121178,
+        0.6714358974082141,
+        53.12330161446867
+      ],
+      "base_vehicle_flu_m": [
+        53.44814183926684,
+        -7.734064661637385,
+        -0.4372800701623588
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 9,
+      "visible_bbox_xyxy": [
+        755,
+        376,
+        758,
+        380
+      ],
+      "visible_centroid_uv": [
+        756.3333333333334,
+        377.6666666666667
+      ],
+      "base_uv": [
+        756.1158018106728,
+        379.1573433662086
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 53.69767098296972
+    },
+    {
+      "instance_id": 84,
+      "id": "FSAI_Blue_084",
+      "color": "blue",
+      "base_world_ue_m": [
+        44.334968655541324,
+        40.388973598976236,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        44.334968639138125,
+        40.388973598976236,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        9.217609914490113,
+        0.8496765355228216,
+        56.386465959817514
+      ],
+      "centre_camera_optical_m": [
+        9.217614094254069,
+        0.6876030340320304,
+        56.387266922288504
+      ],
+      "base_vehicle_flu_m": [
+        56.71210714708665,
+        -9.157763134770276,
+        -0.4534472067861752
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 6,
+      "visible_bbox_xyxy": [
+        767,
+        375,
+        769,
+        379
+      ],
+      "visible_centroid_uv": [
+        767.3333333333334,
+        376.8333333333333
+      ],
+      "base_uv": [
+        767.6843093332101,
+        378.71589274181076
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 57.14122702732576
+    },
+    {
+      "instance_id": 85,
+      "id": "FSAI_Blue_085",
+      "color": "blue",
+      "base_world_ue_m": [
+        42.72194290773984,
+        43.443851209491484,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        42.72194289133664,
+        43.443851209491484,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        11.255374432289063,
+        0.8635148418461475,
+        59.175991645229935
+      ],
+      "centre_camera_optical_m": [
+        11.25537861205301,
+        0.7014413403553564,
+        59.17679260770092
+      ],
+      "base_vehicle_flu_m": [
+        59.50163283249906,
+        -11.195527652569226,
+        -0.4672855131095011
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 5,
+      "visible_bbox_xyxy": [
+        785,
+        375,
+        787,
+        379
+      ],
+      "visible_centroid_uv": [
+        785.8,
+        376.8
+      ],
+      "base_uv": [
+        786.0688002672028,
+        378.3693007320656
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 60.243066810127104
+    },
+    {
+      "instance_id": 86,
+      "id": "FSAI_Blue_086",
+      "color": "blue",
+      "base_world_ue_m": [
+        40.498375529225086,
+        46.11034413127861,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        40.49837551282189,
+        46.11034413127861,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        13.841110923410543,
+        0.8750318389940875,
+        61.492944503186955
+      ],
+      "centre_camera_optical_m": [
+        13.841115103174499,
+        0.7129583375032965,
+        61.49374546565794
+      ],
+      "base_vehicle_flu_m": [
+        61.81858569045608,
+        -13.781264143690706,
+        -0.4788025102574411
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 8,
+      "visible_bbox_xyxy": [
+        809,
+        375,
+        813,
+        379
+      ],
+      "visible_centroid_uv": [
+        810.375,
+        377.125
+      ],
+      "base_uv": [
+        809.9130016109735,
+        378.09513801644573
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 63.03748294455798
+    },
+    {
+      "instance_id": 87,
+      "id": "FSAI_Blue_087",
+      "color": "blue",
+      "base_world_ue_m": [
+        37.6728354895232,
+        48.22777298657637,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        37.67283547312,
+        48.22777298657637,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        16.9431087234436,
+        0.883447112503665,
+        63.179574369212126
+      ],
+      "centre_camera_optical_m": [
+        16.94311290320754,
+        0.7213736110128738,
+        63.1803753316831
+      ],
+      "base_vehicle_flu_m": [
+        63.50521555648124,
+        -16.883261943723756,
+        -0.4872177837670185
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 7,
+      "visible_bbox_xyxy": [
+        839,
+        376,
+        842,
+        379
+      ],
+      "visible_centroid_uv": [
+        839.7142857142857,
+        377.14285714285717
+      ],
+      "base_uv": [
+        839.0958320612483,
+        377.8922855897968
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 65.41794883279226
+    },
+    {
+      "instance_id": 88,
+      "id": "FSAI_Blue_088",
+      "color": "blue",
+      "base_world_ue_m": [
+        34.43952855456201,
+        49.535192218988534,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        34.43952853815882,
+        49.535192218988534,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        20.331474029289513,
+        0.88761747892389,
+        64.00575954647744
+      ],
+      "centre_camera_optical_m": [
+        20.331478209053458,
+        0.7255439774330988,
+        64.00656050894844
+      ],
+      "base_vehicle_flu_m": [
+        64.33140073374656,
+        -20.271627249569676,
+        -0.4913881501872435
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 3,
+      "visible_bbox_xyxy": [
+        872,
+        375,
+        873,
+        378
+      ],
+      "visible_centroid_uv": [
+        872.0,
+        376.0
+      ],
+      "base_uv": [
+        872.1716457715302,
+        377.7699171395101
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 67.16318899601218
+    },
+    {
+      "instance_id": 89,
+      "id": "FSAI_Blue_089",
+      "color": "blue",
+      "base_world_ue_m": [
+        31.18825196834185,
+        50.16027986245892,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        31.18825195193865,
+        50.16027986245892,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        23.638965657129667,
+        0.8884363301647302,
+        64.15419290988612
+      ],
+      "centre_camera_optical_m": [
+        23.638969836893622,
+        0.7263628286739391,
+        64.1549938723571
+      ],
+      "base_vehicle_flu_m": [
+        64.47983409715523,
+        -23.57911887740981,
+        -0.4922070014280837
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 4,
+      "visible_bbox_xyxy": [
+        905,
+        376,
+        907,
+        378
+      ],
+      "visible_centroid_uv": [
+        905.5,
+        376.5
+      ],
+      "base_uv": [
+        905.5871357324429,
+        377.70589752913645
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 68.37653460340466
+    },
+    {
+      "instance_id": 90,
+      "id": "FSAI_Blue_090",
+      "color": "blue",
+      "base_world_ue_m": [
+        28.037958921796886,
+        50.44068368421516,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        28.03795890539369,
+        50.44068368421516,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        26.796698924736283,
+        0.887637976411819,
+        63.97616887879284
+      ],
+      "centre_camera_optical_m": [
+        26.79670310450024,
+        0.7255644749210279,
+        63.976969841263816
+      ],
+      "base_vehicle_flu_m": [
+        64.30181006606198,
+        -26.736852145016446,
+        -0.49140864767517256
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 4,
+      "visible_bbox_xyxy": [
+        937,
+        375,
+        939,
+        378
+      ],
+      "visible_centroid_uv": [
+        937.75,
+        376.25
+      ],
+      "base_uv": [
+        938.0805934094583,
+        377.66661990851827
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 69.36714754729326
+    },
+    {
+      "instance_id": 91,
+      "id": "FSAI_Blue_091",
+      "color": "blue",
+      "base_world_ue_m": [
+        24.940195170481676,
+        50.52626906194325,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        24.94019515407848,
+        50.52626906194325,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        29.874287139828603,
+        0.8859224303577723,
+        63.61297065320521
+      ],
+      "centre_camera_optical_m": [
+        29.874291319592547,
+        0.7238489288669812,
+        63.6137716156762
+      ],
+      "base_vehicle_flu_m": [
+        63.938611840474344,
+        -29.814440360108758,
+        -0.48969310162112584
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 4,
+      "visible_bbox_xyxy": [
+        970,
+        375,
+        972,
+        378
+      ],
+      "visible_centroid_uv": [
+        970.25,
+        376.25
+      ],
+      "base_uv": [
+        970.1134122604326,
+        377.63789670267175
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 70.28419399830297
+    },
+    {
+      "instance_id": 92,
+      "id": "FSAI_Blue_092",
+      "color": "blue",
+      "base_world_ue_m": [
+        21.873979000054803,
+        50.481118858143766,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        21.873978983651604,
+        50.481118858143766,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        32.90175693382964,
+        0.8835888385320193,
+        63.12497337303784
+      ],
+      "centre_camera_optical_m": [
+        32.9017611135936,
+        0.7215153370412282,
+        63.125774335508794
+      ],
+      "base_vehicle_flu_m": [
+        63.45061456030695,
+        -32.84191015410981,
+        -0.4873595097953728
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 6,
+      "visible_bbox_xyxy": [
+        1001,
+        375,
+        1004,
+        379
+      ],
+      "visible_centroid_uv": [
+        1002.0,
+        377.0
+      ],
+      "base_uv": [
+        1001.8644290993587,
+        377.6136666449151
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 71.1903687440592
+    },
+    {
+      "instance_id": 93,
+      "id": "FSAI_Blue_093",
+      "color": "blue",
+      "base_world_ue_m": [
+        18.829463522376013,
+        50.339129031066825,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        18.829463505972814,
+        50.339129031066825,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        35.893752555643516,
+        0.880796293417702,
+        62.54429273313536
+      ],
+      "centre_camera_optical_m": [
+        35.89375673540746,
+        0.718722791926911,
+        62.54509369560635
+      ],
+      "base_vehicle_flu_m": [
+        62.86993392040449,
+        -35.83390577592366,
+        -0.48456696468105565
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 4,
+      "visible_bbox_xyxy": [
+        1032,
+        375,
+        1035,
+        379
+      ],
+      "visible_centroid_uv": [
+        1033.0,
+        376.5
+      ],
+      "base_uv": [
+        1033.3900174240418,
+        377.5906730019534
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 72.1174446865971
+    },
+    {
+      "instance_id": 94,
+      "id": "FSAI_Blue_094",
+      "color": "blue",
+      "base_world_ue_m": [
+        15.80117121898284,
+        50.120229371985396,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        15.801171202579642,
+        50.120229371985396,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        38.85857550572141,
+        0.8776385516247048,
+        61.88985691588937
+      ],
+      "centre_camera_optical_m": [
+        38.85857968548536,
+        0.7155650501339137,
+        61.890657878360344
+      ],
+      "base_vehicle_flu_m": [
+        62.2154981031585,
+        -38.79872872600157,
+        -0.48140922288805843
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 6,
+      "visible_bbox_xyxy": [
+        1063,
+        375,
+        1067,
+        378
+      ],
+      "visible_centroid_uv": [
+        1064.6666666666667,
+        376.5
+      ],
+      "base_uv": [
+        1064.6954225764273,
+        377.5669442196024
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 73.08292227894563
+    },
+    {
+      "instance_id": 95,
+      "id": "FSAI_Blue_095",
+      "color": "blue",
+      "base_world_ue_m": [
+        12.785578468564257,
+        49.83701293579594,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        12.785578452161058,
+        49.83701293579594,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        41.80153314027154,
+        0.8741748121370715,
+        61.173617046950966
+      ],
+      "centre_camera_optical_m": [
+        41.80153732003548,
+        0.7121013106462803,
+        61.174418009421956
+      ],
+      "base_vehicle_flu_m": [
+        61.499258234220086,
+        -41.74168636055168,
+        -0.477945483400425
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 6,
+      "visible_bbox_xyxy": [
+        1095,
+        375,
+        1098,
+        378
+      ],
+      "visible_centroid_uv": [
+        1095.8333333333333,
+        376.3333333333333
+      ],
+      "base_uv": [
+        1095.7608732488786,
+        377.5411955971232
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 74.09685402961723
+    },
+    {
+      "instance_id": 96,
+      "id": "FSAI_Blue_096",
+      "color": "blue",
+      "base_world_ue_m": [
+        9.775222588517837,
+        49.49638771771655,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        9.77522257211464,
+        49.49638771771655,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        44.73100851596649,
+        0.8704337388616987,
+        60.40132947661888
+      ],
+      "centre_camera_optical_m": [
+        44.73101269573043,
+        0.7083602373709076,
+        60.40213043908987
+      ],
+      "base_vehicle_flu_m": [
+        60.726970663888004,
+        -44.671161736246624,
+        -0.47420441012505216
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 7,
+      "visible_bbox_xyxy": [
+        1125,
+        375,
+        1128,
+        378
+      ],
+      "visible_centroid_uv": [
+        1126.2857142857142,
+        376.14285714285717
+      ],
+      "base_uv": [
+        1126.607945750051,
+        377.5125887642379
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 75.16609195835768
+    },
+    {
+      "instance_id": 97,
+      "id": "FSAI_Blue_097",
+      "color": "blue",
+      "base_world_ue_m": [
+        6.70835716681241,
+        49.0790350360639,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        6.708357150409211,
+        49.0790350360639,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        47.705306062253584,
+        0.8662782481261263,
+        59.544951281087144
+      ],
+      "centre_camera_optical_m": [
+        47.70531024201753,
+        0.7042047466353352,
+        59.54575224355813
+      ],
+      "base_vehicle_flu_m": [
+        59.870592468356264,
+        -47.64545928253375,
+        -0.4700489193894798
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 6,
+      "visible_bbox_xyxy": [
+        1157,
+        374,
+        1159,
+        378
+      ],
+      "visible_centroid_uv": [
+        1157.6666666666667,
+        375.8333333333333
+      ],
+      "base_uv": [
+        1157.8927892041183,
+        377.4811839984941
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 76.3030005148127
+    },
+    {
+      "instance_id": 98,
+      "id": "FSAI_Blue_098",
+      "color": "blue",
+      "base_world_ue_m": [
+        3.628232004408766,
+        48.41557002872838,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        3.628231988005567,
+        48.41557002872838,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        50.65714001584117,
+        0.8609092186208882,
+        58.44313264083796
+      ],
+      "centre_camera_optical_m": [
+        50.65714419560511,
+        0.6988357171300971,
+        58.44393360330894
+      ],
+      "base_vehicle_flu_m": [
+        58.76877382810708,
+        -50.59729323612132,
+        -0.4646798898842417
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 6,
+      "visible_bbox_xyxy": [
+        1190,
+        374,
+        1192,
+        378
+      ],
+      "visible_centroid_uv": [
+        1190.3333333333333,
+        375.8333333333333
+      ],
+      "base_uv": [
+        1190.1567035516134,
+        377.4605594487799
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 77.34653678182251
+    },
+    {
+      "instance_id": 99,
+      "id": "FSAI_Blue_099",
+      "color": "blue",
+      "base_world_ue_m": [
+        0.6374070409139165,
+        47.54214885117124,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        0.6374070245107183,
+        47.54214885117124,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        53.49025570537296,
+        0.8545742525029235,
+        57.14647776246731
+      ],
+      "centre_camera_optical_m": [
+        53.4902598851369,
+        0.6925007510121323,
+        57.147278724938296
+      ],
+      "base_vehicle_flu_m": [
+        57.47211894973643,
+        -53.430408925653104,
+        -0.45834492376627695
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 7,
+      "visible_bbox_xyxy": [
+        1222,
+        374,
+        1224,
+        378
+      ],
+      "visible_centroid_uv": [
+        1222.4285714285713,
+        375.7142857142857
+      ],
+      "base_uv": [
+        1222.4131468164032,
+        377.4499407781443
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 78.27935662251828
+    },
+    {
+      "instance_id": 100,
+      "id": "FSAI_Blue_100",
+      "color": "blue",
+      "base_world_ue_m": [
+        -2.25721573896348,
+        46.55015036431928,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        -2.2572157553666785,
+        46.55015036431928,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        56.211035627970496,
+        0.847725287066475,
+        55.74640214302234
+      ],
+      "centre_camera_optical_m": [
+        56.21103980773444,
+        0.6856517855756837,
+        55.74720310549331
+      ],
+      "base_vehicle_flu_m": [
+        56.07204333029146,
+        -56.15118884825065,
+        -0.4514959583298285
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 6,
+      "visible_bbox_xyxy": [
+        1254,
+        374,
+        1256,
+        378
+      ],
+      "visible_centroid_uv": [
+        1254.3333333333333,
+        375.8333333333333
+      ],
+      "base_uv": [
+        1254.2037227925857,
+        377.443285422975
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 79.17108384014246
+    },
+    {
+      "instance_id": 182,
+      "id": "FSAI_Yellow_037",
+      "color": "yellow",
+      "base_world_ue_m": [
+        43.10100548770193,
+        -13.939402934263926,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        43.101005471298734,
+        -13.939402934263926,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        2.583570718780836,
+        0.582958923333361,
+        2.4511941286471024
+      ],
+      "centre_camera_optical_m": [
+        2.5835748985447866,
+        0.4208854218425697,
+        2.4519950911180834
+      ],
+      "base_vehicle_flu_m": [
+        2.7768353159162262,
+        -2.523723939060995,
+        -0.18672959459671443
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 2281,
+      "visible_bbox_xyxy": [
+        1223,
+        430,
+        1280,
+        515
+      ],
+      "visible_centroid_uv": [
+        1263.1801841297677,
+        480.99210872424374
+      ],
+      "base_uv": [
+        1268.7670312138052,
+        507.1532667948462
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 3.6087437456197615
+    },
+    {
+      "instance_id": 183,
+      "id": "FSAI_Yellow_038",
+      "color": "yellow",
+      "base_world_ue_m": [
+        42.70715144626949,
+        -11.295576207675975,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        42.70715142986629,
+        -11.295576207675975,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        3.3555424634297135,
+        0.5956256811797259,
+        5.010264261504516
+      ],
+      "centre_camera_optical_m": [
+        3.3555466431936636,
+        0.4335521796889348,
+        5.011065223975497
+      ],
+      "base_vehicle_flu_m": [
+        5.33590544877364,
+        -3.295695683709872,
+        -0.19939635244307943
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 864,
+      "visible_bbox_xyxy": [
+        1063,
+        403,
+        1113,
+        448
+      ],
+      "visible_centroid_uv": [
+        1087.454861111111,
+        431.68402777777777
+      ],
+      "base_uv": [
+        1087.3048751429926,
+        445.22911380547987
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 6.059470533476515
+    },
+    {
+      "instance_id": 184,
+      "id": "FSAI_Yellow_039",
+      "color": "yellow",
+      "base_world_ue_m": [
+        41.96104808542983,
+        -8.950795751698594,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        41.96104806902663,
+        -8.950795751698594,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        4.432824827284828,
+        0.6065862911195639,
+        7.222504796651228
+      ],
+      "centre_camera_optical_m": [
+        4.432829007048777,
+        0.44451278962877266,
+        7.22330575912221
+      ],
+      "base_vehicle_flu_m": [
+        7.548145983920351,
+        -4.3729780475649855,
+        -0.21035696238291732
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 417,
+      "visible_bbox_xyxy": [
+        1040,
+        394,
+        1074,
+        425
+      ],
+      "visible_centroid_uv": [
+        1056.4460431654677,
+        413.4724220623501
+      ],
+      "base_uv": [
+        1056.173129423878,
+        423.33211339858207
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 8.496026036660727
+    },
+    {
+      "instance_id": 185,
+      "id": "FSAI_Yellow_040",
+      "color": "yellow",
+      "base_world_ue_m": [
+        40.60006969132049,
+        -7.017554662036664,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        40.60006967491729,
+        -7.017554662036664,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        6.059019228179468,
+        0.6151092938322968,
+        8.93863487007613
+      ],
+      "centre_camera_optical_m": [
+        6.059023407943418,
+        0.4530357923415057,
+        8.93943583254711
+      ],
+      "base_vehicle_flu_m": [
+        9.264276057345253,
+        -5.999172448459627,
+        -0.21887996509565041
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 197,
+      "visible_bbox_xyxy": [
+        1079,
+        389,
+        1107,
+        414
+      ],
+      "visible_centroid_uv": [
+        1094.1776649746193,
+        403.502538071066
+      ],
+      "base_uv": [
+        1092.435337154752,
+        412.8189687990742
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 10.816157672267371
+    },
+    {
+      "instance_id": 186,
+      "id": "FSAI_Yellow_041",
+      "color": "yellow",
+      "base_world_ue_m": [
+        38.696412488675,
+        -5.3764492594042315,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        38.6964124722718,
+        -5.3764492594042315,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        8.179951956371015,
+        0.6218287600793435,
+        10.287240408768866
+      ],
+      "centre_camera_optical_m": [
+        8.179956136134964,
+        0.4597552585885524,
+        10.28804137123985
+      ],
+      "base_vehicle_flu_m": [
+        10.612881596037992,
+        -8.120105176651176,
+        -0.22559943134269705
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 188,
+      "visible_bbox_xyxy": [
+        1143,
+        387,
+        1167,
+        408
+      ],
+      "visible_centroid_uv": [
+        1154.968085106383,
+        399.9574468085106
+      ],
+      "base_uv": [
+        1154.5995792840881,
+        406.3900128709778
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 13.157720176505004
+    },
+    {
+      "instance_id": 187,
+      "id": "FSAI_Yellow_042",
+      "color": "yellow",
+      "base_world_ue_m": [
+        36.44777911080973,
+        -4.012757576577742,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        36.447779094406535,
+        -4.012757576577742,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        10.602126312038196,
+        0.6269529531202351,
+        11.311472905448143
+      ],
+      "centre_camera_optical_m": [
+        10.602130491802148,
+        0.464879451629444,
+        11.312273867919126
+      ],
+      "base_vehicle_flu_m": [
+        11.63711409271727,
+        -10.542279532318355,
+        -0.2307236243835886
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 142,
+      "visible_bbox_xyxy": [
+        1213,
+        385,
+        1234,
+        403
+      ],
+      "visible_centroid_uv": [
+        1223.0845070422536,
+        396.22535211267603
+      ],
+      "base_uv": [
+        1222.7648777954032,
+        402.00740443993925
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 15.516042395937383
+    },
+    {
+      "instance_id": 215,
+      "id": "FSAI_Yellow_070",
+      "color": "yellow",
+      "base_world_ue_m": [
+        10.562455976055041,
+        26.979388585344996,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        10.562455959651842,
+        26.979388585344996,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        40.69643989405612,
+        0.7607844478132012,
+        38.23502127246041
+      ],
+      "centre_camera_optical_m": [
+        40.69644407382007,
+        0.59871094632241,
+        38.23582223493139
+      ],
+      "base_vehicle_flu_m": [
+        38.56066245972953,
+        -40.63659311433627,
+        -0.36455511907655463
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 13,
+      "visible_bbox_xyxy": [
+        1275,
+        377,
+        1280,
+        381
+      ],
+      "visible_centroid_uv": [
+        1277.5384615384614,
+        378.84615384615387
+      ],
+      "base_uv": [
+        1277.575418456901,
+        380.0679574105598
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 55.84528507163391
+    },
+    {
+      "instance_id": 216,
+      "id": "FSAI_Yellow_071",
+      "color": "yellow",
+      "base_world_ue_m": [
+        13.8820601947307,
+        27.473922509227574,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        13.882060178327501,
+        27.473922509227574,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        37.4832184161203,
+        0.7654917797035136,
+        39.20431046835522
+      ],
+      "centre_camera_optical_m": [
+        37.48322259588426,
+        0.6034182782127224,
+        39.2051114308262
+      ],
+      "base_vehicle_flu_m": [
+        39.52995165562433,
+        -37.42337163640046,
+        -0.36926245096686705
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 8,
+      "visible_bbox_xyxy": [
+        1231,
+        376,
+        1233,
+        380
+      ],
+      "visible_centroid_uv": [
+        1231.5,
+        377.5
+      ],
+      "base_uv": [
+        1231.4187723980308,
+        380.16762140611894
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 54.24532790752177
+    },
+    {
+      "instance_id": 217,
+      "id": "FSAI_Yellow_072",
+      "color": "yellow",
+      "base_world_ue_m": [
+        17.202146778211336,
+        27.299993361815993,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        17.202146761808137,
+        27.299993361815993,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        34.17287030073114,
+        0.7669281784799332,
+        39.51223832001118
+      ],
+      "centre_camera_optical_m": [
+        34.172874480495096,
+        0.6048546769891421,
+        39.51303928248216
+      ],
+      "base_vehicle_flu_m": [
+        39.837879507280306,
+        -34.11302352101131,
+        -0.37069884974328676
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 10,
+      "visible_bbox_xyxy": [
+        1188,
+        376,
+        1191,
+        381
+      ],
+      "visible_centroid_uv": [
+        1189.1,
+        378.6
+      ],
+      "base_uv": [
+        1189.2301422335852,
+        380.3606108553831
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 52.24548038327238
+    },
+    {
+      "instance_id": 218,
+      "id": "FSAI_Yellow_073",
+      "color": "yellow",
+      "base_world_ue_m": [
+        20.286214287820002,
+        26.81634241590024,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        20.286214271416807,
+        26.81634241590024,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        31.051280336952424,
+        0.7666862696718323,
+        39.4795782400191
+      ],
+      "centre_camera_optical_m": [
+        31.05128451671638,
+        0.6046127681810411,
+        39.48037920249008
+      ],
+      "base_vehicle_flu_m": [
+        39.80521942728822,
+        -30.991433557232575,
+        -0.3704569409351858
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 9,
+      "visible_bbox_xyxy": [
+        1149,
+        376,
+        1152,
+        381
+      ],
+      "visible_centroid_uv": [
+        1150.2222222222222,
+        378.55555555555554
+      ],
+      "base_uv": [
+        1150.4491446242846,
+        380.58565803898205
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 50.233523830305806
+    },
+    {
+      "instance_id": 220,
+      "id": "FSAI_Yellow_075",
+      "color": "yellow",
+      "base_world_ue_m": [
+        25.927987427981275,
+        25.932428090050802,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        25.92798741157808,
+        25.932428090050802,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        25.340988067143375,
+        0.7662478605317502,
+        39.420665578871365
+      ],
+      "centre_camera_optical_m": [
+        25.34099224690733,
+        0.6041743590409591,
+        39.42146654134234
+      ],
+      "base_vehicle_flu_m": [
+        39.746306766140485,
+        -25.281141287423544,
+        -0.3700185317951038
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 11,
+      "visible_bbox_xyxy": [
+        1072,
+        377,
+        1075,
+        381
+      ],
+      "visible_centroid_uv": [
+        1073.090909090909,
+        378.6363636363636
+      ],
+      "base_uv": [
+        1073.1810760921762,
+        380.96993822380176
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 46.8694109914354
+    },
+    {
+      "instance_id": 221,
+      "id": "FSAI_Yellow_076",
+      "color": "yellow",
+      "base_world_ue_m": [
+        28.44903494870628,
+        25.968100768708236,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        28.449034932303086,
+        25.968100768708236,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        22.851588244080627,
+        0.7681594478946935,
+        39.820463038249486
+      ],
+      "centre_camera_optical_m": [
+        22.851592423844576,
+        0.6060859464039023,
+        39.82126400072047
+      ],
+      "base_vehicle_flu_m": [
+        40.14610422551861,
+        -22.79174146436079,
+        -0.37193011915804697
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 10,
+      "visible_bbox_xyxy": [
+        1032,
+        377,
+        1036,
+        381
+      ],
+      "visible_centroid_uv": [
+        1033.3,
+        379.0
+      ],
+      "base_uv": [
+        1033.3637004613029,
+        381.0339512908146
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 45.91790969540085
+    },
+    {
+      "instance_id": 222,
+      "id": "FSAI_Yellow_077",
+      "color": "yellow",
+      "base_world_ue_m": [
+        30.868090282801756,
+        26.671232733022944,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        30.868090266398557,
+        26.671232733022944,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        20.559613130964166,
+        0.7732671153104101,
+        40.865952044047816
+      ],
+      "centre_camera_optical_m": [
+        20.559617310728118,
+        0.611193613819619,
+        40.866753006518806
+      ],
+      "base_vehicle_flu_m": [
+        41.19159323131695,
+        -20.499766351244336,
+        -0.3770377865737637
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 10,
+      "visible_bbox_xyxy": [
+        990,
+        376,
+        993,
+        381
+      ],
+      "visible_centroid_uv": [
+        990.7,
+        378.4
+      ],
+      "base_uv": [
+        990.8015859274758,
+        380.9369366819506
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 45.75283237782062
+    },
+    {
+      "instance_id": 223,
+      "id": "FSAI_Yellow_078",
+      "color": "yellow",
+      "base_world_ue_m": [
+        33.32408932470312,
+        27.790578709798275,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        33.324089308299925,
+        27.790578709798275,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        18.291260556070817,
+        0.7804370684715743,
+        42.32861806788576
+      ],
+      "centre_camera_optical_m": [
+        18.29126473583477,
+        0.6183635669807833,
+        42.329419030356746
+      ],
+      "base_vehicle_flu_m": [
+        42.65425925515489,
+        -18.23141377635098,
+        -0.384207739734928
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 11,
+      "visible_bbox_xyxy": [
+        944,
+        378,
+        950,
+        382
+      ],
+      "visible_centroid_uv": [
+        946.5454545454545,
+        380.1818181818182
+      ],
+      "base_uv": [
+        946.5184671759089,
+        380.7400263301892
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 46.11823069334796
+    },
+    {
+      "instance_id": 224,
+      "id": "FSAI_Yellow_079",
+      "color": "yellow",
+      "base_world_ue_m": [
+        35.694781135225256,
+        29.1779933026529,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        35.694781118822064,
+        29.1779933026529,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        16.146077387834318,
+        0.7888600949706189,
+        44.044198768488954
+      ],
+      "centre_camera_optical_m": [
+        16.146081567598277,
+        0.6267865934798277,
+        44.04499973095994
+      ],
+      "base_vehicle_flu_m": [
+        44.369839955758074,
+        -16.086230608114473,
+        -0.3926307662339724
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 10,
+      "visible_bbox_xyxy": [
+        903,
+        376,
+        906,
+        381
+      ],
+      "visible_centroid_uv": [
+        904.1,
+        378.6
+      ],
+      "base_uv": [
+        904.3549975217124,
+        380.4827776187168
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 46.917049783863604
+    },
+    {
+      "instance_id": 225,
+      "id": "FSAI_Yellow_080",
+      "color": "yellow",
+      "base_world_ue_m": [
+        37.870438780290144,
+        30.780202980774625,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        37.870438763886945,
+        30.780202980774625,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        14.224935078991308,
+        0.7981998870543257,
+        45.94411640845481
+      ],
+      "centre_camera_optical_m": [
+        14.224939258755262,
+        0.6361263855635343,
+        45.94491737092578
+      ],
+      "base_vehicle_flu_m": [
+        46.269757595723924,
+        -14.16508829927147,
+        -0.40197055831767897
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 11,
+      "visible_bbox_xyxy": [
+        865,
+        376,
+        869,
+        381
+      ],
+      "visible_centroid_uv": [
+        866.4545454545455,
+        378.54545454545456
+      ],
+      "base_uv": [
+        866.8297919446952,
+        380.187714789167
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 48.10247117991816
+    },
+    {
+      "instance_id": 226,
+      "id": "FSAI_Yellow_081",
+      "color": "yellow",
+      "base_world_ue_m": [
+        39.67265144063406,
+        32.53682468499963,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        39.67265142423087,
+        32.53682468499963,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        12.695639342441664,
+        0.8080380214148953,
+        47.94282800499435
+      ],
+      "centre_camera_optical_m": [
+        12.69564352220561,
+        0.6459645199241041,
+        47.94362896746533
+      ],
+      "base_vehicle_flu_m": [
+        48.26846919226347,
+        -12.635792562721818,
+        -0.41180869267824877
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 12,
+      "visible_bbox_xyxy": [
+        835,
+        376,
+        840,
+        381
+      ],
+      "visible_centroid_uv": [
+        837.0833333333334,
+        378.8333333333333
+      ],
+      "base_uv": [
+        836.825562095731,
+        379.8778731757628
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 49.60188444881782
+    },
+    {
+      "instance_id": 227,
+      "id": "FSAI_Yellow_082",
+      "color": "yellow",
+      "base_world_ue_m": [
+        40.76812017039965,
+        34.349324592692696,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        40.76812015399645,
+        34.349324592692696,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        11.873740520165056,
+        0.8176626571435861,
+        49.894646988816625
+      ],
+      "centre_camera_optical_m": [
+        11.873744699929002,
+        0.655589155652795,
+        49.8954479512876
+      ],
+      "base_vehicle_flu_m": [
+        50.22028817608573,
+        -11.81389374044521,
+        -0.42143332840693953
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 8,
+      "visible_bbox_xyxy": [
+        817,
+        376,
+        820,
+        380
+      ],
+      "visible_centroid_uv": [
+        818.25,
+        377.875
+      ],
+      "base_uv": [
+        818.6757722109575,
+        379.5798444270904
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 51.29454244166453
+    },
+    {
+      "instance_id": 228,
+      "id": "FSAI_Yellow_083",
+      "color": "yellow",
+      "base_world_ue_m": [
+        40.80274222793707,
+        36.426474249114584,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        40.80274221153387,
+        36.426474249114584,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        12.139805719793175,
+        0.8278514832365977,
+        51.95495154868426
+      ],
+      "centre_camera_optical_m": [
+        12.13980989955713,
+        0.6657779817458065,
+        51.95575251115523
+      ],
+      "base_vehicle_flu_m": [
+        52.28059273595338,
+        -12.079958940073329,
+        -0.43162215449995117
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 7,
+      "visible_bbox_xyxy": [
+        815,
+        376,
+        817,
+        380
+      ],
+      "visible_centroid_uv": [
+        815.4285714285714,
+        377.7142857142857
+      ],
+      "base_uv": [
+        815.7449554858788,
+        379.26926954075003
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 53.36082094026242
+    },
+    {
+      "instance_id": 229,
+      "id": "FSAI_Yellow_084",
+      "color": "yellow",
+      "base_world_ue_m": [
+        40.152650488571375,
+        38.72818621034603,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        40.15265047216818,
+        38.72818621034603,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        13.115858274185811,
+        0.83866748091896,
+        54.13845828037188
+      ],
+      "centre_camera_optical_m": [
+        13.115862453949758,
+        0.676593979428169,
+        54.13925924284286
+      ],
+      "base_vehicle_flu_m": [
+        54.464099467641,
+        -13.056011494465965,
+        -0.44243815218231364
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 10,
+      "visible_bbox_xyxy": [
+        820,
+        375,
+        824,
+        380
+      ],
+      "visible_centroid_uv": [
+        821.4,
+        377.7
+      ],
+      "base_uv": [
+        821.5861646731558,
+        378.9556961258033
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 55.710876553754254
+    },
+    {
+      "instance_id": 230,
+      "id": "FSAI_Yellow_085",
+      "color": "yellow",
+      "base_world_ue_m": [
+        38.983056060194656,
+        40.93970961180703,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        38.98305604379146,
+        40.93970961180703,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        14.592914967092074,
+        0.8486841816021738,
+        56.157614062808626
+      ],
+      "centre_camera_optical_m": [
+        14.59291914685603,
+        0.6866106801113827,
+        56.1584150252796
+      ],
+      "base_vehicle_flu_m": [
+        56.483255250077754,
+        -14.533068187372246,
+        -0.4524548528655274
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 6,
+      "visible_bbox_xyxy": [
+        833,
+        376,
+        835,
+        379
+      ],
+      "visible_centroid_uv": [
+        833.5,
+        377.0
+      ],
+      "base_uv": [
+        833.4873854645842,
+        378.6792510980752
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 58.028881165366634
+    },
+    {
+      "instance_id": 231,
+      "id": "FSAI_Yellow_086",
+      "color": "yellow",
+      "base_world_ue_m": [
+        37.39666835648446,
+        42.85006613476216,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        37.39666834008126,
+        42.85006613476216,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        16.43884143068055,
+        0.8569398855959922,
+        57.81851000345493
+      ],
+      "centre_camera_optical_m": [
+        16.438845610444506,
+        0.6948663841052011,
+        57.819310965925915
+      ],
+      "base_vehicle_flu_m": [
+        58.14415119072406,
+        -16.378994650960713,
+        -0.4607105568593457
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 6,
+      "visible_bbox_xyxy": [
+        849,
+        375,
+        851,
+        379
+      ],
+      "visible_centroid_uv": [
+        849.6666666666666,
+        376.8333333333333
+      ],
+      "base_uv": [
+        849.9418789073623,
+        378.4567348855328
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 60.11613720599655
+    },
+    {
+      "instance_id": 232,
+      "id": "FSAI_Yellow_087",
+      "color": "yellow",
+      "base_world_ue_m": [
+        35.464101276964406,
+        44.30712340031234,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        35.464101260561215,
+        44.30712340031234,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        18.561769772370162,
+        0.8627387542815672,
+        58.98082365351254
+      ],
+      "centre_camera_optical_m": [
+        18.561773952134107,
+        0.7006652527907761,
+        58.98162461598353
+      ],
+      "base_vehicle_flu_m": [
+        59.306464840781665,
+        -18.501922992650318,
+        -0.46650942554492075
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 6,
+      "visible_bbox_xyxy": [
+        869,
+        375,
+        872,
+        379
+      ],
+      "visible_centroid_uv": [
+        870.0,
+        377.0
+      ],
+      "base_uv": [
+        870.2183228310632,
+        378.294724991987
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 61.83867053945579
+    },
+    {
+      "instance_id": 233,
+      "id": "FSAI_Yellow_088",
+      "color": "yellow",
+      "base_world_ue_m": [
+        33.17620365128655,
+        45.21616337111497,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        33.17620363488336,
+        45.21616337111497,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        20.957060254427706,
+        0.8656109596971608,
+        59.54951027292587
+      ],
+      "centre_camera_optical_m": [
+        20.957064434191654,
+        0.7035374582063697,
+        59.55031123539687
+      ],
+      "base_vehicle_flu_m": [
+        59.875151460195006,
+        -20.89721347470788,
+        -0.4693816309605144
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 6,
+      "visible_bbox_xyxy": [
+        894,
+        375,
+        897,
+        379
+      ],
+      "visible_centroid_uv": [
+        895.0,
+        377.0
+      ],
+      "base_uv": [
+        894.7750278753147,
+        378.19367880063913
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 63.135503724818456
+    },
+    {
+      "instance_id": 234,
+      "id": "FSAI_Yellow_089",
+      "color": "yellow",
+      "base_world_ue_m": [
+        30.569692011771867,
+        45.7029955345157,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        30.56969199536867,
+        45.7029955345157,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        23.6065722355655,
+        0.8661974750786273,
+        59.65436445764886
+      ],
+      "centre_camera_optical_m": [
+        23.606576415329457,
+        0.7041239735878361,
+        59.65516542011985
+      ],
+      "base_vehicle_flu_m": [
+        59.98000564491798,
+        -23.54672545584567,
+        -0.46996814634198075
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 6,
+      "visible_bbox_xyxy": [
+        923,
+        376,
+        925,
+        379
+      ],
+      "visible_centroid_uv": [
+        923.5,
+        377.0
+      ],
+      "base_uv": [
+        923.2445749430245,
+        378.13309585481596
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 64.16123245094973
+    },
+    {
+      "instance_id": 235,
+      "id": "FSAI_Yellow_090",
+      "color": "yellow",
+      "base_world_ue_m": [
+        27.77784675804563,
+        45.94820756716471,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        27.777846741642435,
+        45.94820756716471,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        26.404535927369725,
+        0.8654738753545408,
+        59.49334421836715
+      ],
+      "centre_camera_optical_m": [
+        26.40454010713367,
+        0.7034003738637497,
+        59.49414518083813
+      ],
+      "base_vehicle_flu_m": [
+        59.818985405636276,
+        -26.34468914764988,
+        -0.4692445466178943
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 7,
+      "visible_bbox_xyxy": [
+        953,
+        375,
+        956,
+        379
+      ],
+      "visible_centroid_uv": [
+        954.1428571428571,
+        377.0
+      ],
+      "base_uv": [
+        953.9266670012912,
+        378.09079792688533
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 65.09536518719132
+    },
+    {
+      "instance_id": 236,
+      "id": "FSAI_Yellow_091",
+      "color": "yellow",
+      "base_world_ue_m": [
+        24.91172790918283,
+        46.02635910561811,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        24.91172789277963,
+        46.02635910561811,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        29.251838438653103,
+        0.8638815548429427,
+        59.15628221735831
+      ],
+      "centre_camera_optical_m": [
+        29.25184261841705,
+        0.7018080533521516,
+        59.15708317982931
+      ],
+      "base_vehicle_flu_m": [
+        59.48192340462745,
+        -29.191991658933247,
+        -0.46765222610629636
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 7,
+      "visible_bbox_xyxy": [
+        985,
+        375,
+        987,
+        379
+      ],
+      "visible_centroid_uv": [
+        985.5714285714286,
+        376.7142857142857
+      ],
+      "base_uv": [
+        985.5158354331537,
+        378.05794974967324
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 65.99910657851062
+    },
+    {
+      "instance_id": 237,
+      "id": "FSAI_Yellow_092",
+      "color": "yellow",
+      "base_world_ue_m": [
+        22.01218036954822,
+        45.98324153862179,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        22.012180353145023,
+        45.98324153862179,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        32.11468476522466,
+        0.8616727457557576,
+        58.694393604397504
+      ],
+      "centre_camera_optical_m": [
+        32.1146889449886,
+        0.6995992442649666,
+        58.69519456686849
+      ],
+      "base_vehicle_flu_m": [
+        59.020034791666625,
+        -32.05483798550482,
+        -0.4654434170191112
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 6,
+      "visible_bbox_xyxy": [
+        1017,
+        376,
+        1019,
+        379
+      ],
+      "visible_centroid_uv": [
+        1017.5,
+        377.0
+      ],
+      "base_uv": [
+        1017.5010853342988,
+        378.0292820991645
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 66.91133908448155
+    },
+    {
+      "instance_id": 238,
+      "id": "FSAI_Yellow_093",
+      "color": "yellow",
+      "base_world_ue_m": [
+        19.09663935979107,
+        45.847067469611815,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        19.09663934338787,
+        45.847067469611815,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        34.97990199027344,
+        0.8589975253994415,
+        58.138115029287526
+      ],
+      "centre_camera_optical_m": [
+        34.979906170037395,
+        0.6969240239086503,
+        58.138915991758516
+      ],
+      "base_vehicle_flu_m": [
+        58.46375621655666,
+        -34.92005521055359,
+        -0.46276819666279495
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 4,
+      "visible_bbox_xyxy": [
+        1049,
+        376,
+        1051,
+        378
+      ],
+      "visible_centroid_uv": [
+        1049.5,
+        376.5
+      ],
+      "base_uv": [
+        1049.628547653545,
+        378.00154126557186
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 67.85552180299291
+    },
+    {
+      "instance_id": 239,
+      "id": "FSAI_Yellow_094",
+      "color": "yellow",
+      "base_world_ue_m": [
+        16.17385917758031,
+        45.635688850871055,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        16.173859161177113,
+        45.635688850871055,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        37.841408916233085,
+        0.8559492878385091,
+        57.50637636898772
+      ],
+      "centre_camera_optical_m": [
+        37.84141309599704,
+        0.6938757863477178,
+        57.507177331458706
+      ],
+      "base_vehicle_flu_m": [
+        57.83201755625686,
+        -37.78156213651324,
+        -0.45971995910186253
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 5,
+      "visible_bbox_xyxy": [
+        1081,
+        375,
+        1083,
+        378
+      ],
+      "visible_centroid_uv": [
+        1081.6,
+        376.2
+      ],
+      "base_uv": [
+        1081.7363423565193,
+        377.9726396634673
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 68.845393462748
+    },
+    {
+      "instance_id": 240,
+      "id": "FSAI_Yellow_095",
+      "color": "yellow",
+      "base_world_ue_m": [
+        13.24895788653823,
+        45.36093434901955,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        13.248957870135031,
+        45.36093434901955,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        40.69585149851802,
+        0.8525894455295465,
+        56.811621840736535
+      ],
+      "centre_camera_optical_m": [
+        40.69585567828196,
+        0.6905159440387553,
+        56.81242280320752
+      ],
+      "base_vehicle_flu_m": [
+        57.137263028005655,
+        -40.63600471879817,
+        -0.45636011679289995
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 7,
+      "visible_bbox_xyxy": [
+        1113,
+        375,
+        1116,
+        378
+      ],
+      "visible_centroid_uv": [
+        1113.7142857142858,
+        376.14285714285717
+      ],
+      "base_uv": [
+        1113.699094771506,
+        377.94119787690636
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 69.88876600804247
+    },
+    {
+      "instance_id": 241,
+      "id": "FSAI_Yellow_096",
+      "color": "yellow",
+      "base_world_ue_m": [
+        10.330481240818585,
+        45.03077602064244,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        10.330481224415387,
+        45.03077602064244,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        43.535926412874744,
+        0.8489628994895599,
+        56.06297520686101
+      ],
+      "centre_camera_optical_m": [
+        43.535930592638685,
+        0.6868893979987689,
+        56.063776169331994
+      ],
+      "base_vehicle_flu_m": [
+        56.38861639413013,
+        -43.4760796331549,
+        -0.4527335707529136
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 3,
+      "visible_bbox_xyxy": [
+        1145,
+        376,
+        1147,
+        378
+      ],
+      "visible_centroid_uv": [
+        1145.3333333333333,
+        376.6666666666667
+      ],
+      "base_uv": [
+        1145.3583018303314,
+        377.90646674768925
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 70.9870045548977
+    },
+    {
+      "instance_id": 242,
+      "id": "FSAI_Yellow_097",
+      "color": "yellow",
+      "base_world_ue_m": [
+        7.485139375576186,
+        44.64658544242518,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        7.4851393591729884,
+        44.64658544242518,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        46.29582279155546,
+        0.8451223254680842,
+        55.27143875196563
+      ],
+      "centre_camera_optical_m": [
+        46.29582697131939,
+        0.683048823977293,
+        55.27223971443661
+      ],
+      "base_vehicle_flu_m": [
+        55.59707993923475,
+        -46.23597601183559,
+        -0.44889299673143773
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 3,
+      "visible_bbox_xyxy": [
+        1176,
+        375,
+        1177,
+        378
+      ],
+      "visible_centroid_uv": [
+        1176.0,
+        376.0
+      ],
+      "base_uv": [
+        1176.0183103745703,
+        377.8700767051552
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 72.103740412023
+    },
+    {
+      "instance_id": 243,
+      "id": "FSAI_Yellow_098",
+      "color": "yellow",
+      "base_world_ue_m": [
+        4.734244106730512,
+        44.053605192841026,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        4.734244090327313,
+        44.053605192841026,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        48.932077242175055,
+        0.8403250692389062,
+        54.286964367090434
+      ],
+      "centre_camera_optical_m": [
+        48.932081421938996,
+        0.6782515677481149,
+        54.28776532956141
+      ],
+      "base_vehicle_flu_m": [
+        54.61260555435955,
+        -48.8722304624552,
+        -0.4440957405022596
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 8,
+      "visible_bbox_xyxy": [
+        1205,
+        376,
+        1209,
+        379
+      ],
+      "visible_centroid_uv": [
+        1206.5,
+        377.25
+      ],
+      "base_uv": [
+        1206.4928207493629,
+        377.8467316199596
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 73.08986817370739
+    },
+    {
+      "instance_id": 244,
+      "id": "FSAI_Yellow_099",
+      "color": "yellow",
+      "base_world_ue_m": [
+        1.9988581703730388,
+        43.253040456400306,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        1.9988581539698405,
+        43.253040456400306,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        51.522971843809984,
+        0.834522640419824,
+        53.09933159005312
+      ],
+      "centre_camera_optical_m": [
+        51.52297602357394,
+        0.672449138929033,
+        53.1001325525241
+      ],
+      "base_vehicle_flu_m": [
+        53.42497277732224,
+        -51.46312506409015,
+        -0.43829331168317764
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 4,
+      "visible_bbox_xyxy": [
+        1236,
+        375,
+        1239,
+        379
+      ],
+      "visible_centroid_uv": [
+        1237.0,
+        377.0
+      ],
+      "base_uv": [
+        1237.722511917456,
+        377.83406185782525
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 73.99224331621404
+    },
+    {
+      "instance_id": 245,
+      "id": "FSAI_Yellow_100",
+      "color": "yellow",
+      "base_world_ue_m": [
+        -0.7504388996709257,
+        42.30991174407966,
+        3.5001798567781224
+      ],
+      "actor_origin_world_ue_m": [
+        -0.7504389160741239,
+        42.30991174407966,
+        3.5
+      ],
+      "base_camera_optical_m": [
+        54.10701887862725,
+        0.8280129597751871,
+        51.76862324737769
+      ],
+      "centre_camera_optical_m": [
+        54.107023058391185,
+        0.6659394582843959,
+        51.769424209848665
+      ],
+      "base_vehicle_flu_m": [
+        52.094264434646824,
+        -54.0471720989074,
+        -0.43178363103854056
+      ],
+      "base_reference": "world AABB bottom centre; upright cone mesh geometry",
+      "visible_pixels": 3,
+      "visible_bbox_xyxy": [
+        1270,
+        375,
+        1271,
+        378
+      ],
+      "visible_centroid_uv": [
+        1270.0,
+        376.0
+      ],
+      "base_uv": [
+        1269.689556869254,
+        377.82588097647186
+      ],
+      "base_projection_in_image": true,
+      "camera_range_m": 74.88821970325249
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+# Windows Python 3.11 x64. PyTorch is installed separately by 00_setup_windows.cmd.
+# Ultralytics 8.4.189 is included in vendor/, not downloaded from pip.
+numpy>=2.2,<2.3
+opencv-python>=4.12,<4.13
+matplotlib>=3.9,<4
+pillow>=11,<14
+PyYAML>=6,<7
+requests>=2.32,<3
+psutil>=6,<8
+polars>=1,<2
+scipy>=1.13,<2
+ultralytics-thop>=2.2.3,<3
+ultralytics-platform>=0.1.45,<1
+nvidia-ml-py>=12
+packaging>=24

@@ -1,0 +1,33 @@
+{
+  "prepared_utc_date": "2026-10-27",
+  "source_fsai_seg_git_head": "a8e4785f2f30c150e708894b650cbc2410853191",
+  "source_fsai_seg_note": "Working-copy files copied; HEAD does not imply a clean checkout. Original files were not modified.",
+  "ultralytics_version": "8.4.189",
+  "ultralytics_source": "Copied pure Python source and dist-info from the working FSAI-Seg environment, no Mac binaries or virtualenv",
+  "model_sha256": "0ab8fa24504a5efa8dd8dd46870c25146ebd22508c64f5e29656e17c59bc24dd",
+  "mono_source": "FSAI/Saved/FSAI_Snapshots/20261027T013954_940944Z/000005",
+  "stereo_source": "FSAI/Saved/FSAI_Dataset/20261027T004158_835066Z_route/frames/000000",
+  "sdk_sim_interface_source": "https://github.com/stereolabs/zed-isaac-sim",
+  "sdk_sim_interface_commit": "f9160973f321ec743f626188244cd9702d85bec6",
+  "checks": {
+    "fresh_cpu_prediction_bitwise_equal_to_reference": true,
+    "new_mono_cpu_inference": true,
+    "stereo_rectification_and_cpu_inference": true,
+    "geometry_metrics_unit_tests": 4,
+    "native_header_abi_check": "clang++ static_assert: sizeof=100 offsets=44/60/96",
+    "windows_cmd_execution": false,
+    "windows_dependency_install": false,
+    "gpu_inference": false,
+    "sdk_streamer_or_sdk_depth": false,
+    "three_way_completed": false
+  },
+  "environment_note": "Validation used existing Mac CPU environment. Windows creates a fresh environment and records versions.",
+  "external_installs_not_bundled": [
+    "Python 3.11 Windows x64",
+    "NVIDIA driver",
+    "Windows Python dependencies including CUDA PyTorch",
+    "ZED SDK and matching pyzed",
+    "Proprietary sim runtime DLL",
+    "SDK depth model and GPU-specific optimized engine"
+  ]
+}

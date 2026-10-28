@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "model": "Stereolabs ZED (original)",
+  "serial": 2448592,
+  "mode": "HD",
+  "width": 1280,
+  "height": 720,
+  "factory_calibration_source": "/Users/huangyicheng/bristol-core-sim2/docs/zed-calibration/SN2448592.conf",
+  "calibration_sha256": "fbbd59af230a4ee3eb471c02b7b31884b4f8e1d07882f60a80a9de881da76ee4",
+  "calibration_status": "factory_raw; not live SDK self-calibrated CameraInfo",
+  "resolution_status": "HD720 selected for UE; actual car runtime mode is not available locally",
+  "mount_source": "bristol-core-sim2/eufs_sim2/eufs_racecar/robots/ads-dv/robot.urdf.xacro:45",
+  "mount_status": "repository URDF, not a fresh physical survey",
+  "mount_center_ros_m": [
+    0.327,
+    0.0,
+    0.577
+  ],
+  "mount_rpy_ros_rad": [
+    0,
+    0,
+    0
+  ],
+  "baseline_mm": 119.724,
+  "R_right_from_left": [
+    [
+      0.99967775984386,
+      0.0022600580588891897,
+      0.02528376180737764
+    ],
+    [
+      -0.00221015881641348,
+      0.999995554908671,
+      -0.002001339777633968
+    ],
+    [
+      -0.02528817256284028,
+      0.0019448137365208641,
+      0.9996783112721623
+    ]
+  ],
+  "t_right_from_left_m": [
+    -0.119724,
+    0.000137756,
+    0.00030982300000000003
+  ],
+  "near_clip_cm": 5.0,
+  "min_depth_m": 0.3,
+  "max_depth_m": 80.0,
+  "evaluation_range_m": [
+    0.5,
+    15.0
+  ],
+  "nominal_capture_fps": 5.0,
+  "fps_status": "requested capture cadence; not a real-time throughput guarantee",
+  "ground_z_ue_cm": 350.0,
+  "hide_ego_vehicle": true,
+  "depth_definition": "optical_z",
+  "depth_source": "SCS_SCENE_DEPTH red channel, centimetres",
+  "temporal_model": "same game-thread capture call, no simulation tick between eyes/modalities; global-shutter idealization",
+  "not_simulated": [
+    "rolling shutter",
+    "sensor noise",
+    "ZED stereo matching errors",
+    "SDK self-calibration"
+  ],
+  "eyes": {
+    "left": {
+      "K": [
+        [
+          699.12,
+          0,
+          653.93
+        ],
+        [
+          0,
+          699.13,
+          368.2255
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "D": [
+        -0.173345,
+        0.0269476,
+        0.000231498,
+        -2.45302e-05,
+        -1.36885e-10
+      ],
+      "render": {
+        "width": 1672,
+        "height": 948,
+        "fx": 699.12,
+        "fy": 699.13,
+        "cx": 861.93,
+        "cy": 487.2255,
+        "crop_x": 208,
+        "crop_y": 119
+      },
+      "offset_ue_cm": [
+        -0.1358812730877806,
+        -5.984677971983608,
+        0.006611262767708018
+      ],
+      "rotation_ue_deg": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    },
+    "right": {
+      "K": [
+        [
+          699.745,
+          0,
+          615.425
+        ],
+        [
+          0,
+          699.8,
+          378.301
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "D": [
+        -0.173619,
+        0.0268098,
+        0.00031731,
+        1.9239e-05,
+        -1.18674e-10
+      ],
+      "render": {
+        "width": 1682,
+        "height": 956,
+        "fx": 699.745,
+        "fy": 699.8,
+        "cx": 796.425,
+        "cy": 506.301,
+        "crop_x": 181,
+        "crop_y": 128
+      },
+      "offset_ue_cm": [
+        0.1358812730877806,
+        5.984677971983608,
+        -0.006611262767708018
+      ],
+      "rotation_ue_deg": [
+        -0.11142968928521617,
+        -1.4490627720613463,
+        0.12949214335658574
+      ]
+    }
+  }
+}

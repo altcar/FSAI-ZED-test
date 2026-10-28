@@ -1,0 +1,42 @@
+{
+  "depth_definition": "optical_z_metres",
+  "gt_min_exclusive_m": 0,
+  "gt_max_inclusive_m": 20,
+  "target_pixels": 419524,
+  "posthoc_scale_fit": false,
+  "pairwise": {
+    "DepthNet": {
+      "pixels": 419524,
+      "mae_m": 2.6131930394857865,
+      "rmse_m": 2.747711849601361,
+      "bias_m": 2.190781246582518,
+      "abs_rel": 1.226518593766329,
+      "coverage_of_gt": 1.0
+    }
+  },
+  "common_pixels": 419524,
+  "common_pixel_metrics": {
+    "DepthNet": {
+      "pixels": 419524,
+      "mae_m": 2.6131930394857865,
+      "rmse_m": 2.747711849601361,
+      "bias_m": 2.190781246582518,
+      "abs_rel": 1.226518593766329
+    }
+  },
+  "three_way_complete": false,
+  "inference": {
+    "replayed_prediction": "FSAI/Exports/FSAI_3070_Windows_Kit/reference_results/single_depth_check.prediction.npy"
+  },
+  "image_sha256": "6f7aa9b40046f1212cfedad9369f0ccd189570ab7b44ff6dedde166c10e3fadf",
+  "gt_sha256": "a1730db26a2c326285fabff7b14704a25ca80a6b13f0009a91d5a693da0ffe25",
+  "all_cone_pixels_common": {
+    "DepthNet": {
+      "pixels": 5895,
+      "mae_m": 1.4218563510969193,
+      "rmse_m": 1.7792588279903678,
+      "bias_m": 0.5516444733630206,
+      "abs_rel": 0.267735895626532
+    }
+  }
+}
